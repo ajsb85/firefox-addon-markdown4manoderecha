@@ -453,6 +453,7 @@ var inline = {
   link: /^!?\[(inside)\]\(href\)/,
   reflink: /^!?\[(inside)\]\s*\[([^\]]*)\]/,
   math: /^\$([^ \t\n\$]([^\$]*[^ \t\n\$])?)\$/, /* adam-p: added for math support */
+  task: noop, /* alexsalas: added for task manoderecha support */
   nolink: /^!?\[((?:\[[^\]]*\]|[^\[\]])*)\]/,
   strong: /^__([\s\S]+?)__(?!_)|^\*\*([\s\S]+?)\*\*(?!\*)/,
   em: /^\b_((?:__|[\s\S])+?)_\b|^\*((?:\*\*|[\s\S])+?)\*(?!\*)/,
@@ -495,11 +496,13 @@ inline.pedantic = merge({}, inline.normal, {
  */
 
 inline.gfm = merge({}, inline.normal, {
-  escape: replace(inline.escape)('])', '~|])')(),
+  escape: replace(inline.escape)('])', '~|])', '\?|])')(),  /* alexsalas: added for task manoderecha support */
   url: /^(https?:\/\/[^\s<]+[^<.,:;"')\]\s])/,
   del: /^~~(?=\S)([\s\S]*?\S)~~/,
+  task: /^\?([0-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9]|[1-9][0-9][0-9][0-9][0-9]|[1-9][0-9][0-9][0-9][0-9][0-9])\?/, /* alexsalas: added for task manoderecha support */
   text: replace(inline.text)
     (']|', '~]|')
+    (']|', '\?]|')  /* alexsalas: added for task manoderecha support */
     ('|', '|https?://|')
     ()
 });
@@ -683,6 +686,12 @@ InlineLexer.prototype.output = function(src) {
     if (cap = this.rules.del.exec(src)) {
       src = src.substring(cap[0].length);
       out += this.renderer.del(this.output(cap[1]));
+      continue;
+    }
+    
+    if (cap = this.rules.task.exec(src)) {
+      src = src.substring(cap[0].length);
+      out += this.renderer.task(this.output(cap[1]));
       continue;
     }
 
@@ -876,6 +885,14 @@ Renderer.prototype.br = function() {
 
 Renderer.prototype.del = function(text) {
   return '<del>' + text + '</del>';
+};
+
+/* alexsalas: added for task manoderecha support */
+Renderer.prototype.task = function(text) {
+  var out = '<a href="http://manoderecha.net/md/index.php/task/' + text + '"';
+    out += ' title="Task #' + text  + '"';
+  out += '>#' + text + '</a>';
+  return out;
 };
 
 Renderer.prototype.link = function(href, title, text) {
