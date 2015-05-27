@@ -1,23 +1,23 @@
-# ![Markdown Here logo](https://raw.github.com/adam-p/markdown-here/master/src/common/images/icon48.png) Markdown Here
+# ![markdown for manoderecha logo](https://raw.github.com/alexsalas/manoderecha-tool-markdown/master/src/common/images/icon48.png) markdown tool for manoderecha
 
-[**Visit the website.**](http://markdown-here.com)  
+[**Visit the website.**](http://manoderecha.net)  
 [**Get it for Chrome.**](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa)  
-[**Get it for Firefox.**](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/)  
-[**Get it for Safari.**](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz)  
-[**Get it for Thunderbird and Postbox.**](https://addons.mozilla.org/en-US/thunderbird/addon/markdown-here/)  
-[**Get it for Opera.**](https://addons.opera.com/en/extensions/details/markdown-here/)  
-[**Discuss it and ask questions in the Google Group.**](https://groups.google.com/forum/?fromgroups#!forum/markdown-here/)
+[**Get it for Firefox.**](https://addons.mozilla.org/en-US/firefox/addon/manoderecha-tool-markdown/)  
+[**Get it for Safari.**](https://github.com/alexsalas/manoderecha-tool-markdown/archive/manoderecha-tool-markdown.safariextz)  
+[**Get it for Thunderbird and Postbox.**](https://addons.mozilla.org/en-US/thunderbird/addon/manoderecha-tool-markdown/)  
+[**Get it for Opera.**](https://addons.opera.com/en/extensions/details/manoderecha-tool-markdown/)  
+[**Discuss it and ask questions in the Google Group of MarkDown Here.**](https://groups.google.com/forum/?fromgroups#!forum/markdown-here/)
 
-*Markdown Here* is a Google Chrome, Firefox, Safari, Opera, and Thunderbird extension that lets you write email<sup>&dagger;</sup> in Markdown<sup>&Dagger;</sup> and render them before sending. It also supports syntax highlighting (just specify the language in a fenced code block).
+This tool is a Google Chrome, Firefox, Safari, Opera, and Thunderbird extension that lets you write email<sup>&dagger;</sup> in Markdown<sup>&Dagger;</sup> and render them before sending. It also supports syntax highlighting (just specify the language in a fenced code block).
 
 Writing email with code in it is pretty tedious. Writing Markdown with code in it is easy. I found myself writing email in Markdown in the Github in-browser editor, then copying the preview into email. This is a pretty absurd workflow, so I decided create a tool to write and render Markdown right in the email.
 
-To discover what can be done with Markdown in *Markdown Here*, check out the [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet) and the other [wiki pages](https://github.com/adam-p/markdown-here/wiki).
+To discover what can be done with Markdown in *manoderecha*, check out the [Markdown Here Cheatsheet](https://github.com/adam-p/markdown-here/wiki/markdown-here-Cheatsheet) and the other [wiki pages](https://github.com/adam-p/markdown-here/wiki).
 
 <sup>&dagger;: And Google Groups posts, and Blogger posts, and Evernote notes, and Wordpress posts! [See more](#compatibility).</sup>  
 <sup>&Dagger;: And TeX mathematical formulae!</sup>
 
-![screenshot of conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image1.gimp.png)
+![screenshot of conversion](https://raw.github.com/alexsalas/manoderecha-tool-markdown/master/store-assets/manoderecha-tool-markdown-image1.gimp.png)
 
 ### Table of Contents
 **[Installation Instructions](#installation-instructions)**  
@@ -34,7 +34,7 @@ To discover what can be done with Markdown in *Markdown Here*, check out the [Ma
 
 #### Chrome Web Store
 
-Go to the [Chrome Web Store page for *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
+Go to the [Chrome Web Store page](https://chrome.google.com/webstore/detail/ToDo) and install normally.
 
 After installing, make sure to reload your webmail or restart Chrome!
 
@@ -44,20 +44,20 @@ After installing, make sure to reload your webmail or restart Chrome!
 2. In Chrome, open the Extensions settings. (Wrench button, Tools, Extensions.)
 3. On the Extensions settings page, click the "Developer Mode" checkbox.
 4. Click the now-visible "Load unpacked extension…" button. Navigate to the directory where you cloned the repo, then the `src` directory under that.
-5. The *Markdown Here* extension should now be visible in your extensions list.
+5. This extension should now be visible in your extensions list.
 6. Reload your webmail page (and maybe application) before trying to convert an email.
 
 ### Firefox and Thunderbird
 
 #### Mozilla Add-ons site
 
-Go to the [Firefox Add-ons page for *Markdown Here*](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/) and install normally.
+Go to the [Firefox Add-ons page](https://addons.mozilla.org/en-US/firefox/addon/manoderecha-tool-markdown/) and install normally.
 
-Or go to the "Tools > Add-ons" menu and then search for "Markdown Here".
+Or go to the "Tools > Add-ons" menu and then search for "markdown for manoderecha".
 
 After installing, make sure to restart Firefox/Thunderbird!
 
-**Note:** It takes up to a month for Mozilla to approve changes to the Firefox/Thunderbird extension, so updates (features, fixes) will lag behind what is shown here. You can manually choose to install the newest version before it's reviewed from the list of versions: [https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/versions/)
+**Note:** It takes up to a month for Mozilla to approve changes to the Firefox/Thunderbird extension, so updates (features, fixes) will lag behind what is shown here. You can manually choose to install the newest version before it's reviewed from the list of versions: [https://addons.mozilla.org/en-US/firefox/addon/manoderecha-tool-markdown/versions/](https://addons.mozilla.org/en-US/firefox/addon/manoderecha-tool-markdown/versions/)
 
 #### Manual/Development
 
@@ -66,17 +66,17 @@ After installing, make sure to restart Firefox/Thunderbird!
 
 ### Safari
 
-[Download the extension directly.](https://s3.amazonaws.com/markdown-here/markdown-here.safariextz) When it has finished downloading, double click it to install. 
+[Download the extension directly.](https://github.com/alexsalas/manoderecha-tool-markdown/archive/manoderecha-tool-markdown.safariextz) When it has finished downloading, double click it to install. 
 
 #### Preferences
 
-To get to the Markdown Here preferences, open the Safari preferences and then go to the "Extensions" tab. Then click the "Click me to show Markdown Here options" box.
+To get to the preferences, open the Safari preferences and then go to the "Extensions" tab. Then click the "Click me to show Markdown Here options" box.
 
 ### Opera
 
-Note that *Markdown Here* only works with Opera versions 16 and higher (i.e., the ones that are based on Chromium).
+Note that only works with Opera versions 16 and higher (i.e., the ones that are based on Chromium).
 
-Go to the [Opera Add-ons store page for *Markdown Here*](https://addons.opera.com/en/extensions/details/markdown-here/) and install normally.
+Go to the [Opera Add-ons store page](https://addons.opera.com/en/extensions/details/manoderecha-tool-markdown/) and install normally.
 
 After installing, make sure to reload your webmail or restart Chrome!
 
@@ -123,7 +123,7 @@ Sometimes you don't want to convert the entire email; sometimes your email isn't
 
 To revert back to Markdown, just put your cursor anywhere in the block of converted text, right click, and click the "Markdown Toggle" menu item again. Now it's magically back to the original Markdown.
 
-![screenshot of selection conversion](https://raw.github.com/adam-p/markdown-here/master/store-assets/markdown-here-image2.gimp.png)
+![screenshot of selection conversion](https://raw.github.com/alexsalas/manoderecha-tool-markdown/master/store-assets/manoderecha-tool-markdown-image2.gimp.png)
 
 #### Things to know about converting/reverting a selection
 
@@ -135,16 +135,16 @@ To revert back to Markdown, just put your cursor anywhere in the block of conver
 
 ### Options
 
-The *Markdown Here* Options page can be accessed via the Chrome, Firefox, Safari, or Thunderbird extensions list. The available options include:
+The Options page can be accessed via the Chrome, Firefox, Safari, or Thunderbird extensions list. The available options include:
 
 * Styling modifications for the rendered Markdown.
 * Syntax highlighting theme selection and modification.
 * TeX math formulae processing enabling and customization.
 * What the hotkey should be.
 
-For Chrome and Firefox, any changes made in the *Markdown Here* Options are automatically synchronized between your other installations of that browser (if you have the sync feature enabled in the browser). 
+For Chrome and Firefox, any changes made in the Options are automatically synchronized between your other installations of that browser (if you have the sync feature enabled in the browser). 
 
-![screenshot of options](https://raw.githubusercontent.com/adam-p/markdown-here/master/store-assets/markdown-here-chrome-options-1.gimp.png)
+![screenshot of options](https://raw.githubusercontent.com/alexsalas/manoderecha-tool-markdown/master/store-assets/manoderecha-tool-markdown-chrome-options-1.gimp.png)
 
 
 ## Troubleshooting
@@ -159,7 +159,7 @@ See the [Compatibility wiki page](https://github.com/adam-p/markdown-here/wiki/C
 
 ## Notes and Miscellaneous
 
-* *Markdown Here* uses [Github Flavored Markdown](http://github.github.com/github-flavored-markdown/), with the limitation that GFM special links are not supported ([issue #11](https://github.com/adam-p/markdown-here/issues/11)); nor will they be, as MDH is not Github-specific.
+* This tool uses [Github Flavored Markdown](http://github.github.com/github-flavored-markdown/), with the limitation that GFM special links are not supported ([issue #11](https://github.com/alexsalas/manoderecha-tool-markdown/issues/11)); nor will they be, as MDH is not Github-specific.
 
 * Available languages for syntax highlighting (and the way they should be written in the fenced code block) can be seen on the [highlight.js demo page](http://softwaremaniacs.org/media/soft/highlight/test.html).
 
@@ -212,19 +212,21 @@ firefox/
 
 ### Safari extension
 
-The browser-specific code is located in the [`markdown-here-safari`](https://github.com/adam-p/markdown-here-safari) project.
+The browser-specific code is located in the [`manoderecha-tool-markdown-safari`](https://github.com/alexsalas/manoderecha-tool-markdown-safari) project.
 
 Use the Safari Extension Builder.
 
 ## Next Steps
 
-See the [issues list](https://github.com/adam-p/markdown-here/issues) and the [Notes Wiki](https://github.com/adam-p/markdown-here/wiki/Development-Notes). All ideas, bugs, plans, complaints, and dreams will end up in one of those two places.
+See the [issues list](https://github.com/alexsalas/manoderecha-tool-markdown/issues) and the [Notes Wiki](https://github.com/adam-p/markdown-here/wiki/Development-Notes). All ideas, bugs, plans, complaints, and dreams will end up in one of those two places.
 
-Feel free to create a feature request issue if what you want isn't already there. If you'd prefer a less formal approach to floating an idea, post to the ["markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
+Feel free to create a feature request issue if what you want isn't already there. If you'd prefer a less formal approach to floating an idea, post to the ["MarkDown Here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
 
 It also takes a fair bit of work to stay up-to-date with the latest changes in all the applications and web sites where Markdown Here works.
 
 ## Credits
+
+This tool is a fork of [Markdown Here](https://github.com/adam-p/markdown-here).
 
 *Markdown Here* was coded on the shoulders of giants.
 
@@ -234,17 +236,17 @@ It also takes a fair bit of work to stay up-to-date with the latest changes in a
 
 ## Feedback
 
-All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/adam-p/markdown-here/issues). Or [post to the "markdown-here" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
+All bugs, feature requests, pull requests, feedback, etc., are welcome. [Create an issue](https://github.com/alexsalas/manoderecha-tool-markdown/issues). Or [post to the "manoderecha-tool-markdown" Google Group](https://groups.google.com/forum/?fromgroups=#!forum/markdown-here).
 
 ## License
 
 ### Code
 
-MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/adam-p/markdown-here/blob/master/LICENSE).
+MIT License: http://adampritchard.mit-license.org/ or see [the `LICENSE` file](https://github.com/alexsalas/manoderecha-tool-markdown/blob/master/LICENSE).
 
 ### Logo
 
-Copyright 2013, [Tatiana A. Fryntoff](http://tatianafryntoff.com/). Licensed under [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/).
+Copyright 2015 manoderecha, [Liliana Libreros](https://twitter.com/liboo). Licensed under [Creative Commons Attribution 3.0 Unported (CC BY 3.0)](https://creativecommons.org/licenses/by/3.0/).
 
 ### Other images
 
@@ -252,4 +254,4 @@ Copyright 2013, [Tatiana A. Fryntoff](http://tatianafryntoff.com/). Licensed und
 
 ---
 
-![Dos Equis man says](https://raw.github.com/adam-p/markdown-here/master/store-assets/dos-equis-MDH.jpg)
+![Dos Equis man says](https://raw.github.com/alexsalas/manoderecha-tool-markdown/master/store-assets/dos-equis-MDH.jpg)
