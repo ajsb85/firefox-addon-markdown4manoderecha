@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE overlay SYSTEM "chrome://markdown_here/locale/strings.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://manoderecha_tool_markdown/locale/strings.dtd">
 
-<?xml-stylesheet href="chrome://markdown_here/skin/toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://manoderecha_tool_markdown/skin/toolbar.css" type="text/css"?>
 
-<overlay id="markdown_here-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="manoderecha_tool_markdown-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
   <!-- Postbox freaks out if there's no `image` attribute here, but Thunderbird
        won't display the icon as retina if there *is* an `image` attribute. -->
   <toolbar class="chromeclass-toolbar" id="FormatToolbar">
-    <spacer id="formatToolbarButton-spacer-markdown_here"
+    <spacer id="formatToolbarButton-spacer-manoderecha_tool_markdown"
             class="formattoolbar-button-spacer"
-            insertbefore="formatToolbarButton-markdown_here" />
-    <toolbarbutton id="formatToolbarButton-markdown_here"
+            insertbefore="formatToolbarButton-manoderecha_tool_markdown" />
+    <toolbarbutton id="formatToolbarButton-manoderecha_tool_markdown"
                    class=""
                    label="&toggle_button_text;"
                    tooltiptext="&toggle_button_tooltip;"
-                   image="resource://markdown_here_common/images/icon16.png"
-                   oncommand="markdown_here.onToolbarButtonCommand(event)" />
+                   image="resource://manoderecha_tool_markdown_common/images/icon16.png"
+                   oncommand="manoderecha_tool_markdown.onToolbarButtonCommand(event)" />
   </toolbar>
 
 </overlay>

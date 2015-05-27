@@ -2,11 +2,11 @@
  * Firefox toolbar
  */
 
-toolbar[iconsize="small"] #toolbarButton-markdown_here > .toolbarbutton-icon {
+toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon {
   width: 18px;
 }
 
-toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] > .toolbarbutton-icon {
+toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown[disabled="true"] > .toolbarbutton-icon {
   width: 18px;
 }
 
@@ -15,17 +15,17 @@ toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] > .toolb
  * Thunderbird formatting toolbar.
  */
 
-#formatToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon12.png");
+#formatToolbarButton-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon12.png");
 }
 
-#formatToolbarButton-markdown_here > .toolbarbutton-icon {
+#formatToolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon {
   width: 12px;
   height: 12px;
 }
 
 @media (min-resolution: 2dppx) {
-  #formatToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon12@2x.png");
+  #formatToolbarButton-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon12@2x.png");
   }
 }

@@ -19,7 +19,7 @@
 
 (function() {
 "use strict";
-/*global Components:false, AddonManager:false, markdown_here:false*/
+/*global Components:false, AddonManager:false, manoderecha_tool_markdown:false*/
 /*jshint devel:true*/
 
 var scriptLoader, imports = {};
@@ -28,17 +28,17 @@ var scriptLoader, imports = {};
 scriptLoader = Components.classes["@mozilla.org/moz/jssubscript-loader;1"]
                              .getService(Components.interfaces.mozIJSSubScriptLoader);
 
-scriptLoader.loadSubScript('resource://markdown_here_common/highlightjs/highlight.js');
+scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/highlightjs/highlight.js');
 imports.hljs = window.hljs;
-scriptLoader.loadSubScript('resource://markdown_here_common/utils.js');
+scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/utils.js');
 imports.Utils = window.Utils;
-scriptLoader.loadSubScript('resource://markdown_here_common/common-logic.js');
+scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/common-logic.js');
 imports.CommonLogic = window.CommonLogic;
-scriptLoader.loadSubScript('resource://markdown_here_common/marked.js');
+scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/marked.js');
 imports.marked = window.marked;
-scriptLoader.loadSubScript('resource://markdown_here_common/markdown-render.js');
+scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/markdown-render.js');
 imports.MarkdownRender = window.MarkdownRender;
-scriptLoader.loadSubScript('resource://markdown_here_common/options-store.js');
+scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/options-store.js');
 imports.OptionsStore = window.OptionsStore;
 
 
@@ -132,7 +132,7 @@ function prefsAccessRequestHandler(request) {
 
   extPrefsBranch = Components.classes['@mozilla.org/preferences-service;1']
                              .getService(Components.interfaces.nsIPrefService)
-                             .getBranch('extensions.markdown-here.');
+                             .getBranch('extensions.manoderecha-tool-markdown.');
   supportString = Components.classes["@mozilla.org/supports-string;1"]
                             .createInstance(Components.interfaces.nsISupportsString);
 
@@ -205,7 +205,7 @@ function getStringBundleHandler() {
 try {
     // Firefox 4 and later; Mozilla 2 and later
     Components.utils.import("resource://gre/modules/AddonManager.jsm");
-    AddonManager.getAddonByID("markdown-here@adam.pritchard", function(addon) {
+    AddonManager.getAddonByID("manoderecha-tool-markdown@adam.pritchard", function(addon) {
         updateHandler(addon.version);
   });
 }
@@ -213,15 +213,15 @@ catch (ex) {
     // Firefox 3.6 and before; Mozilla 1.9.2 and before
     var em = Components.classes["@mozilla.org/extensions/manager;1"]
              .getService(Components.interfaces.nsIExtensionManager);
-    var addon = em.getItemForID("markdown-here@adam.pritchard");
+    var addon = em.getItemForID("manoderecha-tool-markdown@adam.pritchard");
     updateHandler(addon.version);
 }
 
 function updateHandler(currVer) {
   var prefService = Components.classes['@mozilla.org/preferences-service;1']
                               .getService(Components.interfaces.nsIPrefService);
-  var extPrefsBranch = prefService.getBranch('extensions.markdown-here.');
-  var extSyncBranch = prefService.getBranch('services.sync.prefs.sync.extensions.markdown-here.');
+  var extPrefsBranch = prefService.getBranch('extensions.manoderecha-tool-markdown.');
+  var extSyncBranch = prefService.getBranch('services.sync.prefs.sync.extensions.manoderecha-tool-markdown.');
   var supportString = Components.classes["@mozilla.org/supports-string;1"]
                                 .createInstance(Components.interfaces.nsISupportsString);
 
@@ -276,20 +276,20 @@ function updateHandler(currVer) {
       var postTabRestoredOptionsOpen = function() {
         document.removeEventListener('SSTabRestored', tabRestored);
 
-        var optionsURL = 'resource://markdown_here_common/options.html';
+        var optionsURL = 'resource://manoderecha_tool_markdown_common/options.html';
         if (lastVersion) {
           // If this is an upgrade, show the changelist
           optionsURL += '?prevVer=' + lastVersion;
         }
 
-        // If `markdown_here` is available, then we're going to assume we can
+        // If `manoderecha_tool_markdown` is available, then we're going to assume we can
         // use it to show the notification. (I.e., it's presence is our
         // capability check.)
-        var canShowUpgradeNotification = typeof(markdown_here) !== 'undefined';
+        var canShowUpgradeNotification = typeof(manoderecha_tool_markdown) !== 'undefined';
 
         if (lastVersion && canShowUpgradeNotification) {
           // If this is an upgrade, show the upgrade notification
-          markdown_here.showUpgradeNotification(optionsURL, openTab);
+          manoderecha_tool_markdown.showUpgradeNotification(optionsURL, openTab);
         }
         else {
           // If this is a brand new install or we can't handle upgrade notifications,
@@ -306,13 +306,13 @@ function updateHandler(currVer) {
   }
 
   if (localFirstRun) {
-    installButton('nav-bar', 'toolbarButton-markdown_here');
+    installButton('nav-bar', 'toolbarButton-manoderecha_tool_markdown');
 
     // Note that we can't add the same button to more than one toolbar.
     // If we wanted to add the button to the addon toolbar, we'd use this
     // line.
     // The 'addon-bar' is available since Firefox 4
-    //installButton('addon-bar', 'toolbarButton-markdown_here');
+    //installButton('addon-bar', 'toolbarButton-manoderecha_tool_markdown');
   }
 }
 

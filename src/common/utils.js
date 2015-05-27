@@ -298,7 +298,7 @@ function getLocalURL(url) {
     return chrome.extension.getURL(url);
   }
   else if (typeof(safari) !== 'undefined') {
-    return safari.extension.baseURI + 'markdown-here/src' + url;
+    return safari.extension.baseURI + 'manoderecha-tool-markdown/src' + url;
   }
   else /*? } */ {
     // Mozilla platform.
@@ -310,10 +310,10 @@ function getLocalURL(url) {
     var CONTENT = '/firefox/chrome/';
 
     if (url.indexOf(COMMON) === 0) {
-      return 'resource://markdown_here_common/' + url.slice(COMMON.length);
+      return 'resource://manoderecha_tool_markdown_common/' + url.slice(COMMON.length);
     }
     else if (url.indexOf(CONTENT) === 0) {
-      return 'chrome://markdown_here/' + url.slice(CONTENT.length);
+      return 'chrome://manoderecha_tool_markdown/' + url.slice(CONTENT.length);
     }
   }
 
@@ -410,7 +410,7 @@ function getLocalFileAsBase64(url, callback) {
 
 
 // Events fired by Markdown Here will have this property set to true.
-var MARKDOWN_HERE_EVENT = 'markdown-here-event';
+var MANODERECHA_TOOL_MARKDOWN_EVENT = 'manoderecha-tool-markdown-event';
 
 // Fire a mouse event on the given element. (Note: not super robust.)
 function fireMouseClick(elem) {
@@ -432,13 +432,13 @@ function fireMouseClick(elem) {
     0,                              // button
     null);                          // relatedTarget
 
-  clickEvent[MARKDOWN_HERE_EVENT] = true;
+  clickEvent[MANODERECHA_TOOL_MARKDOWN_EVENT] = true;
 
   elem.dispatchEvent(clickEvent);
 }
 
 
-var PRIVILEGED_REQUEST_EVENT_NAME = 'markdown-here-request-event';
+var PRIVILEGED_REQUEST_EVENT_NAME = 'manoderecha-tool-markdown-request-event';
 
 function makeRequestToPrivilegedScript(doc, requestObj, callback) {
   /*? if(platform!=='mozilla'){ */
@@ -498,7 +498,7 @@ function makeRequestToPrivilegedScript(doc, requestObj, callback) {
     // See: https://developer.mozilla.org/en-US/docs/Code_snippets/Interaction_between_privileged_and_non-privileged_pages#Chromium-like_messaging.3A_json_request_with_json_callback
 
     // Make a unique event name to use. (Bad style to modify the input like this...)
-    requestObj.responseEventName = 'markdown-here-response-event-' + Math.floor(Math.random()*1000000);
+    requestObj.responseEventName = 'manoderecha-tool-markdown-response-event-' + Math.floor(Math.random()*1000000);
 
     var request = doc.createTextNode(JSON.stringify(requestObj));
 
@@ -710,7 +710,7 @@ function getMozStringBundle() {
   stringBundle = window.Components.classes["@mozilla.org/intl/stringbundle;1"]
                         .getService(Components.interfaces.nsIStringBundleService)
                         // Notice the explicit locale in this path:
-                        .createBundle("resource://markdown_here_locale/en/strings.properties");
+                        .createBundle("resource://manoderecha_tool_markdown_locale/en/strings.properties");
 
   stringBundleEnum = stringBundle.getSimpleEnumeration();
   while (stringBundleEnum.hasMoreElements()) {
@@ -722,7 +722,7 @@ function getMozStringBundle() {
 
   stringBundle = window.Components.classes["@mozilla.org/intl/stringbundle;1"]
                         .getService(Components.interfaces.nsIStringBundleService)
-                        .createBundle("chrome://markdown_here/locale/strings.properties");
+                        .createBundle("chrome://manoderecha_tool_markdown/locale/strings.properties");
 
   stringBundleEnum = stringBundle.getSimpleEnumeration();
   while (stringBundleEnum.hasMoreElements()) {
@@ -1102,7 +1102,7 @@ Utils.getLocalURL = getLocalURL;
 Utils.getLocalFile = getLocalFile;
 Utils.getLocalFileAsBase64 = getLocalFileAsBase64;
 Utils.fireMouseClick = fireMouseClick;
-Utils.MARKDOWN_HERE_EVENT = MARKDOWN_HERE_EVENT;
+Utils.MANODERECHA_TOOL_MARKDOWN_EVENT = MANODERECHA_TOOL_MARKDOWN_EVENT;
 Utils.makeRequestToPrivilegedScript = makeRequestToPrivilegedScript;
 Utils.PRIVILEGED_REQUEST_EVENT_NAME = PRIVILEGED_REQUEST_EVENT_NAME;
 Utils.consoleLog = consoleLog;

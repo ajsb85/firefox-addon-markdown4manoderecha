@@ -9,14 +9,14 @@
  */
 
 /* This is the overall wrapper, it should be treated as the `body` section. */
-.markdown-here-wrapper {
+.manoderecha-tool-markdown-wrapper {
 }
 
 /* To add site specific rules, you can use the `data-md-url` attribute that we
    add to the wrapper element. Note that rules like this are used depending
    on the URL you're *sending* from, not the URL where the recipient views it.
 */
-/* .markdown-here-wrapper[data-md-url*="mail.yahoo."] ul { color: red; } */
+/* .manoderecha-tool-markdown-wrapper[data-md-url*="mail.yahoo."] ul { color: red; } */
 
 pre, code {
   font-size: 0.85em;
@@ -49,13 +49,13 @@ pre code {
 
 /* In edit mode, Wordpress uses a `* { font: ...;} rule+style that makes highlighted
 code look non-monospace. This rule will override it. */
-.markdown-here-wrapper[data-md-url*="wordpress."] code span {
+.manoderecha-tool-markdown-wrapper[data-md-url*="wordpress."] code span {
   font: inherit;
 }
 
 /* Wordpress adds a grey background to `pre` elements that doesn't go well with
 our syntax highlighting. */
-.markdown-here-wrapper[data-md-url*="wordpress."] pre {
+.manoderecha-tool-markdown-wrapper[data-md-url*="wordpress."] pre {
   background-color: transparent;
 }
 

@@ -12,7 +12,7 @@
  * rendering services.
  */
 
-var markdown_here = {
+var manoderecha_tool_markdown = {
 
   imports: {},
 
@@ -31,7 +31,7 @@ var markdown_here = {
   onMenuItemCommand: function(e) {
     var mdReturn, focusedElem, self = this;
 
-    focusedElem = markdown_here.imports.markdownHere.findFocusedElem(window.document);
+    focusedElem = manoderecha_tool_markdown.imports.markdownHere.findFocusedElem(window.document);
     if (!focusedElem) {
       // Shouldn't happen. But if it does, just silently abort.
       return;
@@ -43,24 +43,24 @@ var markdown_here = {
       // Are we rich-editing?
       /*jshint newcap:false*/
       if (window.GetCurrentEditorType().indexOf('html') < 0) {
-        this.alert(markdown_here.imports.Utils.getMessage('plain_text_compose'));
+        this.alert(manoderecha_tool_markdown.imports.Utils.getMessage('plain_text_compose'));
         return;
       }
 
       // The focus might not be in the compose box
-      if (!markdown_here.imports.markdownHere.elementCanBeRendered(focusedElem)) {
-        this.alert(markdown_here.imports.Utils.getMessage('cursor_into_compose'));
+      if (!manoderecha_tool_markdown.imports.markdownHere.elementCanBeRendered(focusedElem)) {
+        this.alert(manoderecha_tool_markdown.imports.Utils.getMessage('cursor_into_compose'));
         return;
       }
     }
     else { // Firefox
-      if (!markdown_here.imports.markdownHere.elementCanBeRendered(focusedElem)) {
-        this.alert(markdown_here.imports.Utils.getMessage('invalid_field'));
+      if (!manoderecha_tool_markdown.imports.markdownHere.elementCanBeRendered(focusedElem)) {
+        this.alert(manoderecha_tool_markdown.imports.Utils.getMessage('invalid_field'));
         return;
       }
     }
 
-    mdReturn = markdown_here.imports.markdownHere(
+    mdReturn = manoderecha_tool_markdown.imports.markdownHere(
                 focusedElem.ownerDocument,
                 function(elem, range, callback) {
                   self.markdownRender(elem, range, callback);
@@ -75,7 +75,7 @@ var markdown_here = {
   },
 
   onToolbarButtonCommand: function(e) {
-    markdown_here.onMenuItemCommand(e);
+    manoderecha_tool_markdown.onMenuItemCommand(e);
   },
 
   // NOTE: Thunderbird seems to reuse compose windows, so this will only get
@@ -90,24 +90,24 @@ var markdown_here = {
     var contextMenu;
 
     // scriptLoader loads stuff into `window`.
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/utils.js');
-    markdown_here.imports.Utils = window.Utils;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/common-logic.js');
-    markdown_here.imports.CommonLogic = window.CommonLogic;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/jsHtmlToText.js');
-    markdown_here.imports.htmlToText = window.htmlToText;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/marked.js');
-    markdown_here.imports.marked = window.marked;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/markdown-here.js');
-    markdown_here.imports.markdownHere = window.markdownHere;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/mdh-html-to-text.js');
-    markdown_here.imports.MdhHtmlToText = window.MdhHtmlToText;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/markdown-render.js');
-    markdown_here.imports.MarkdownRender = window.MarkdownRender;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/options-store.js');
-    markdown_here.imports.OptionsStore = OptionsStore;
-    markdown_here.scriptLoader.loadSubScript('resource://markdown_here_common/highlightjs/highlight.js');
-    markdown_here.imports.hljs = window.hljs;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/utils.js');
+    manoderecha_tool_markdown.imports.Utils = window.Utils;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/common-logic.js');
+    manoderecha_tool_markdown.imports.CommonLogic = window.CommonLogic;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/jsHtmlToText.js');
+    manoderecha_tool_markdown.imports.htmlToText = window.htmlToText;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/marked.js');
+    manoderecha_tool_markdown.imports.marked = window.marked;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/manoderecha-tool-markdown.js');
+    manoderecha_tool_markdown.imports.markdownHere = window.markdownHere;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/mdh-html-to-text.js');
+    manoderecha_tool_markdown.imports.MdhHtmlToText = window.MdhHtmlToText;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/markdown-render.js');
+    manoderecha_tool_markdown.imports.MarkdownRender = window.MarkdownRender;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/options-store.js');
+    manoderecha_tool_markdown.imports.OptionsStore = OptionsStore;
+    manoderecha_tool_markdown.scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/highlightjs/highlight.js');
+    manoderecha_tool_markdown.imports.hljs = window.hljs;
 
     // initialization code
     this.initialized = true;
@@ -115,13 +115,13 @@ var markdown_here = {
     contextMenu = document.getElementById('contentAreaContextMenu');
     if (!contextMenu) contextMenu = document.getElementById('msgComposeContext');
     contextMenu.addEventListener('popupshowing', function (e) {
-      markdown_here.contextMenuShowing(e);
+      manoderecha_tool_markdown.contextMenuShowing(e);
     }, false);
 
     this.setupButton();
 
     // Some setup steps are dependent on options
-    markdown_here.imports.OptionsStore.get(function(prefs) {
+    manoderecha_tool_markdown.imports.OptionsStore.get(function(prefs) {
 
       // Register a hotkey listener
 
@@ -130,7 +130,7 @@ var markdown_here = {
             event.ctrlKey === prefs.hotkey.ctrlKey &&
             event.altKey === prefs.hotkey.altKey &&
             event.which === prefs.hotkey.key.toUpperCase().charCodeAt(0)) {
-          markdown_here.onMenuItemCommand();
+          manoderecha_tool_markdown.onMenuItemCommand();
           event.preventDefault();
           return false;
         }
@@ -167,28 +167,28 @@ var markdown_here = {
             return;
           }
 
-          var plaintext = new markdown_here.imports.MdhHtmlToText.MdhHtmlToText(
+          var plaintext = new manoderecha_tool_markdown.imports.MdhHtmlToText.MdhHtmlToText(
                             window.GetCurrentEditor().document.body,
                             null,
                             true).get();
 
-          if (!markdown_here.imports.CommonLogic.probablyWritingMarkdown(
+          if (!manoderecha_tool_markdown.imports.CommonLogic.probablyWritingMarkdown(
                 plaintext,
-                markdown_here.imports.htmlToText,
-                markdown_here.imports.marked)) {
+                manoderecha_tool_markdown.imports.htmlToText,
+                manoderecha_tool_markdown.imports.marked)) {
             return;
           }
 
           var promptParams = {
             inn:{
-              promptInfo: markdown_here.imports.Utils.getMessage('forgot_to_render_prompt_info'),
-              promptQuestion: markdown_here.imports.Utils.getMessage('forgot_to_render_prompt_question'),
-              promptBackButton: markdown_here.imports.Utils.getMessage('forgot_to_render_back_button'),
-              promptSendButton: markdown_here.imports.Utils.getMessage('forgot_to_render_send_button') },
+              promptInfo: manoderecha_tool_markdown.imports.Utils.getMessage('forgot_to_render_prompt_info'),
+              promptQuestion: manoderecha_tool_markdown.imports.Utils.getMessage('forgot_to_render_prompt_question'),
+              promptBackButton: manoderecha_tool_markdown.imports.Utils.getMessage('forgot_to_render_back_button'),
+              promptSendButton: manoderecha_tool_markdown.imports.Utils.getMessage('forgot_to_render_send_button') },
             out:null
           };
           window.openDialog(
-            "chrome://markdown_here/content/confirm-prompt.xul",
+            "chrome://manoderecha_tool_markdown/content/confirm-prompt.xul",
             "",
             "chrome, dialog, modal, centerscreen",
             promptParams).focus();
@@ -216,7 +216,7 @@ var markdown_here = {
       showItem = true;
     }
     else { // Firefox
-      focusedElem = markdown_here.imports.markdownHere.findFocusedElem(window.document);
+      focusedElem = manoderecha_tool_markdown.imports.markdownHere.findFocusedElem(window.document);
 
       if (!focusedElem) {
         showItem = false;
@@ -230,15 +230,15 @@ var markdown_here = {
         showItem = true;
       }
       else {
-        showItem = markdown_here.imports.markdownHere.elementCanBeRendered(focusedElem);
+        showItem = manoderecha_tool_markdown.imports.markdownHere.elementCanBeRendered(focusedElem);
       }
     }
 
-    document.getElementById('context-markdown_here').hidden = !showItem;
+    document.getElementById('context-manoderecha_tool_markdown').hidden = !showItem;
   },
 
   log: function(msg) {
-    markdown_here.imports.Utils.consoleLog(msg);
+    manoderecha_tool_markdown.imports.Utils.consoleLog(msg);
   },
 
   alert: function(msg) {
@@ -249,14 +249,14 @@ var markdown_here = {
 
   // The rendering service provided to the content script.
   markdownRender: function(elem, range, callback) {
-    var mdhHtmlToText = new markdown_here.imports.MdhHtmlToText.MdhHtmlToText(elem, range);
+    var mdhHtmlToText = new manoderecha_tool_markdown.imports.MdhHtmlToText.MdhHtmlToText(elem, range);
 
-    markdown_here.imports.OptionsStore.get(function(prefs) {
-      var renderedMarkdown = markdown_here.imports.MarkdownRender.markdownRender(
+    manoderecha_tool_markdown.imports.OptionsStore.get(function(prefs) {
+      var renderedMarkdown = manoderecha_tool_markdown.imports.MarkdownRender.markdownRender(
         mdhHtmlToText.get(),
         prefs,
-        markdown_here.imports.marked,
-        markdown_here.imports.hljs);
+        manoderecha_tool_markdown.imports.marked,
+        manoderecha_tool_markdown.imports.hljs);
       renderedMarkdown = mdhHtmlToText.postprocess(renderedMarkdown);
 
       callback(renderedMarkdown, prefs['main-css'] + prefs['syntax-css']);
@@ -274,18 +274,18 @@ var markdown_here = {
       var btn, tooltipString;
 
       // Page action button
-      btn = document.getElementById('pageAction-markdown_here');
+      btn = document.getElementById('pageAction-manoderecha_tool_markdown');
       if (btn) {
         btn.setAttribute('collapsed', !show);
       }
 
       // Toolbar button
-      btn = document.getElementById('toolbarButton-markdown_here');
+      btn = document.getElementById('toolbarButton-manoderecha_tool_markdown');
       if (btn) {
         if (show) {
           btn.removeAttribute('disabled');
 
-          tooltipString = markdown_here.imports.Utils.getMessage('toggle_button_tooltip');
+          tooltipString = manoderecha_tool_markdown.imports.Utils.getMessage('toggle_button_tooltip');
           if (tooltipString) {
             btn.setAttribute('tooltiptext', tooltipString);
           }
@@ -293,7 +293,7 @@ var markdown_here = {
         else {
           btn.setAttribute('disabled', 'true');
 
-          tooltipString = markdown_here.imports.Utils.getMessage('toggle_button_tooltip_disabled');
+          tooltipString = manoderecha_tool_markdown.imports.Utils.getMessage('toggle_button_tooltip_disabled');
           if (tooltipString) {
             btn.setAttribute('tooltiptext', tooltipString);
           }
@@ -318,7 +318,7 @@ var markdown_here = {
         // arguments.
         elem.ownerDocument.addEventListener('focus', focusChange, true);
 
-        renderable = markdown_here.imports.markdownHere.elementCanBeRendered(elem);
+        renderable = manoderecha_tool_markdown.imports.markdownHere.elementCanBeRendered(elem);
       }
 
       if (renderable !== lastRenderable) {
@@ -340,7 +340,7 @@ var markdown_here = {
     // because Mozilla's automatic extension review prefers when you pass the
     // former to `setInterval()`.
     var intervalCheck = function() {
-      var focusedElem = markdown_here.imports.markdownHere.findFocusedElem(window.document);
+      var focusedElem = manoderecha_tool_markdown.imports.markdownHere.findFocusedElem(window.document);
       if (!focusedElem) {
         return;
       }
@@ -348,16 +348,16 @@ var markdown_here = {
       setToggleButtonVisibility(focusedElem);
 
       if (forgotToRenderIntervalCheckPrefs === null) {
-        markdown_here.imports.OptionsStore.get(function(prefs) {
+        manoderecha_tool_markdown.imports.OptionsStore.get(function(prefs) {
           forgotToRenderIntervalCheckPrefs = prefs;
         });
       }
       else {
-        markdown_here.imports.CommonLogic.forgotToRenderIntervalCheck(
+        manoderecha_tool_markdown.imports.CommonLogic.forgotToRenderIntervalCheck(
           focusedElem,
-          markdown_here.imports.markdownHere,
-          markdown_here.imports.MdhHtmlToText,
-          markdown_here.imports.marked,
+          manoderecha_tool_markdown.imports.markdownHere,
+          manoderecha_tool_markdown.imports.MdhHtmlToText,
+          manoderecha_tool_markdown.imports.marked,
           forgotToRenderIntervalCheckPrefs);
       }
     };
@@ -367,28 +367,28 @@ var markdown_here = {
   _showUpgradeNotificationInterval: null,
 
   showUpgradeNotification: function(optionsURL, openTabFn) {
-    markdown_here.imports.CommonLogic.getUpgradeNotification(optionsURL, function(html) {
+    manoderecha_tool_markdown.imports.CommonLogic.getUpgradeNotification(optionsURL, function(html) {
       var addUpgradeNotificationToTab = function(tabbrowser) {
-        if (!tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-content')) {
+        if (!tabbrowser.contentDocument.querySelector('#manoderecha-tool-markdown-upgrade-notification-content')) {
           var elem = tabbrowser.contentDocument.createElement('div');
           tabbrowser.contentDocument.body.appendChild(elem);
-          markdown_here.imports.Utils.saferSetOuterHTML(elem, html);
+          manoderecha_tool_markdown.imports.Utils.saferSetOuterHTML(elem, html);
 
             // Setting the outer HTML wrecks our reference to the element, so get it again.
-          elem = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-content');
+          elem = tabbrowser.contentDocument.querySelector('#manoderecha-tool-markdown-upgrade-notification-content');
 
           // Add click handlers so that we can clear the notification.
-          var optionsLink = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-link');
+          var optionsLink = tabbrowser.contentDocument.querySelector('#manoderecha-tool-markdown-upgrade-notification-link');
           optionsLink.addEventListener('click', function(event) {
             event.preventDefault();
-            markdown_here._hideUpgradeNotification();
+            manoderecha_tool_markdown._hideUpgradeNotification();
             openTabFn(optionsURL);
           });
 
-          var closeLink = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-close');
+          var closeLink = tabbrowser.contentDocument.querySelector('#manoderecha-tool-markdown-upgrade-notification-close');
           closeLink.addEventListener('click', function(event) {
             event.preventDefault();
-            markdown_here._hideUpgradeNotification();
+            manoderecha_tool_markdown._hideUpgradeNotification();
           });
         }
       };
@@ -397,30 +397,30 @@ var markdown_here = {
       // This is because there might not actually be any tabs when we first
       // start.
       var showUpgradeNotificationsAgain = function() {
-        markdown_here._forAllTabsDo(addUpgradeNotificationToTab);
+        manoderecha_tool_markdown._forAllTabsDo(addUpgradeNotificationToTab);
       };
 
-      if (markdown_here._showUpgradeNotificationInterval === null) {
-        markdown_here._showUpgradeNotificationInterval = setInterval(showUpgradeNotificationsAgain, 5000);
+      if (manoderecha_tool_markdown._showUpgradeNotificationInterval === null) {
+        manoderecha_tool_markdown._showUpgradeNotificationInterval = setInterval(showUpgradeNotificationsAgain, 5000);
       }
     });
   },
 
   _hideUpgradeNotification: function() {
-    if (markdown_here._showUpgradeNotificationInterval !== null) {
-      clearInterval(markdown_here._showUpgradeNotificationInterval);
-      markdown_here._showUpgradeNotificationInterval = null;
+    if (manoderecha_tool_markdown._showUpgradeNotificationInterval !== null) {
+      clearInterval(manoderecha_tool_markdown._showUpgradeNotificationInterval);
+      manoderecha_tool_markdown._showUpgradeNotificationInterval = null;
     }
 
     function removeNotificationFromTab(tabbrowser) {
       // Check if this tab has the notification and remove it.
-      var notification = tabbrowser.contentDocument.querySelector('#markdown-here-upgrade-notification-content');
+      var notification = tabbrowser.contentDocument.querySelector('#manoderecha-tool-markdown-upgrade-notification-content');
       if (notification) {
         tabbrowser.contentDocument.body.removeChild(notification);
       }
     }
 
-    markdown_here._forAllTabsDo(removeNotificationFromTab);
+    manoderecha_tool_markdown._forAllTabsDo(removeNotificationFromTab);
   },
 
   // TODO: move to a Mozilla/Firefox-specifc utils module.
@@ -476,7 +476,7 @@ var markdown_here = {
 
 window.addEventListener('load', function () {
   var delayedLoad = function() {
-    markdown_here.onLoad();
+    manoderecha_tool_markdown.onLoad();
   };
 
   // In the interest of improved browser load performace, call our onLoad after a tick.

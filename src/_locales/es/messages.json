@@ -125,19 +125,19 @@
     "description":"A section title"
   },
   "options_page__resources_cheatsheet_link":{
-    "message":"Si eres nuevo en Markdown, la <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Markdown-Here-Cheatsheet\" target=\"_blank\">Markdown Here Cheatsheet<\/a> te convertirá en una estrella profesional."
+    "message":"Si eres nuevo en Markdown, la <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Markdown-Here-Cheatsheet\" target=\"_blank\">Markdown Here Cheatsheet<\/a> te convertirá en una estrella profesional."
   },
   "options_page__advanced_usage":{
-    "message":"Para mucha más información y uso avanzado, consulte la <a href=\"https:\/\/github.com\/adam-p\/markdown-here\" target=\"_blank\">página del proyecto Markdown Here <\/a>. También deberías explorar las siguientes opciones."
+    "message":"Para mucha más información y uso avanzado, consulte la <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\" target=\"_blank\">página del proyecto Markdown Here <\/a>. También deberías explorar las siguientes opciones."
   },
   "options_page__ggroup":{
-    "message":"Haz una pregunta, comienza una charla, o simplemente saluda en el <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\" target=\"_blank\">Google Group markdown-here<\/a>."
+    "message":"Haz una pregunta, comienza una charla, o simplemente saluda en el <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/manoderecha-tool-markdown\" target=\"_blank\">Google Group manoderecha-tool-markdown<\/a>."
   },
   "options_page__mdh_wiki":{
-    "message":"Visita la <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\" target=\"_blank\">wiki de Markdown Here<\/a> para obtener información sobre <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Compatibility\" target=\"_blank\">dónde funciona MDH<\/a> y más <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">consejos y trucos<\/a>."
+    "message":"Visita la <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\" target=\"_blank\">wiki de Markdown Here<\/a> para obtener información sobre <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Compatibility\" target=\"_blank\">dónde funciona MDH<\/a> y más <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Tips-and-Tricks\" target=\"_blank\">consejos y trucos<\/a>."
   },
   "options_page__next_steps":{
-    "message":"Si estás interesado en lo que el futuro le depara a Markdown Here, consulta la <a href=\"https:\/\/github.com\/adam-p\/markdown-here#next-steps\" target=\"_blank\">sección Próximos pasos<\/a> of the README."
+    "message":"Si estás interesado en lo que el futuro le depara a Markdown Here, consulta la <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown#next-steps\" target=\"_blank\">sección Próximos pasos<\/a> of the README."
   },
   "options_page__donate_plea_1":{
     "message":"Una vez que decidas que Markdown Here es genial, por favor ayúdame a comprarle flores a mi mujer para que no esté demasiado molesta por todo el tiempo que pasa trabajando en ello. <strong>¡Gracias!<\/strong>"
@@ -298,20 +298,20 @@
     "message":"Cuando envías un correo electrónico, esto comprueba el contenido para ver si parece que escribió en Markdown, pero se te olvidó renderizarlo (es decir, hacer clic en \"Markdown Toggle\") antes de enviar. Esto puede necesitar ser desactivado si interfiere con su capacidad de enviar correo electrónico."
   },
   "options_page__forgot_to_render_3":{
-    "message":"Si te encuentras deshabilitando esto, <em>por favor<\/em> dejame saber por qué y cómo podría ser mejor. Crea <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/markdown-here\" target=\"_blank\"> un post en el grupo de Google \"Markdown Here\"<\/a> o <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\" target=\"_blank\"> un error en el proyecto de Github<\/a>. Gracias."
+    "message":"Si te encuentras deshabilitando esto, <em>por favor<\/em> dejame saber por qué y cómo podría ser mejor. Crea <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/manoderecha-tool-markdown\" target=\"_blank\"> un post en el grupo de Google \"Markdown Here\"<\/a> o <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/issues\" target=\"_blank\"> un error en el proyecto de Github<\/a>. Gracias."
   },
   "options_page__contributing_title":{
     "message":"Contribuyendo",
     "description":"A section title"
   },
   "options_page__contributing_1":{
-    "message":"<strong>Si alguna vez has puesto un bloque de código en un correo electrónico, entonces puedes ayudar a mejorar Markdown Here.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
+    "message":"<strong>Si alguna vez has puesto un bloque de código en un correo electrónico, entonces puedes ayudar a mejorar Markdown Here.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
   },
   "options_page__contributing_2":{
-    "message":"Ayuda a que Markdown esté disponible en tu idioma. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">Las traducciones son bienvenidas.<\/a>"
+    "message":"Ayuda a que Markdown esté disponible en tu idioma. <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">Las traducciones son bienvenidas.<\/a>"
   },
   "options_page__footer_1":{
-    "message":"<em>Markdown Here<\/em> is open source. Para preguntar, informar de errores, solicitar características, o contribuir, visita la <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/markdown-here\">página del proyecto Github<\/a> o el <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\">Google Group \"markdown-here\"<\/a>.",
+    "message":"<em>Markdown Here<\/em> is open source. Para preguntar, informar de errores, solicitar características, o contribuir, visita la <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\">página del proyecto Github<\/a> o el <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/manoderecha-tool-markdown\">Google Group \"manoderecha-tool-markdown\"<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__footer_2":{
@@ -323,7 +323,7 @@
     "description":"message that shows when user changes have been saved"
   },
   "options_page__preview_markdown":{
-    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hola, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* sin formato <br>\n* *con &eacute;nfasis*<br>\n&nbsp; * **con mucho &eacute;nfasis**<br>\n&nbsp; &nbsp; * ~~tachado~~<br>\n* `c&oacute;digo en l&iacute;nea`<br>\n<br>\n1. Lista numerada<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Enlace](https:\/\/www.google.com)<br>\n<br>\n<br>\nUna imagen: ![logo Markdown Here](http:\/\/adam-p.github.io\/markdown-here\/img\/icon24.png)\n<br>\n<br>\n> Bloque de cita.&nbsp; <br>\n> *Con* **algo de** `markdown`.<br>\n<br>\nSi el soporte **TeX Math** est&aacute; activado, esta es la ecuaci&oacute;n cuadr&aacute;tica:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Cabecera 1<br>\n## Cabecera 2<br>\n### Cabecera 3<br>\n#### Cabecera 4<br>\n##### Cabecera 5<br>\n###### Cabecera 6<br>\n&nbsp; <br>\n| Tablas        | Son           | Guays  |<br>\n| ------------- |:-------------:| -----:|<br>\n| columna 3   | a la derecha | $$1600 |<br>\n| columna 2   | centrada      |   $$12 |<br>\n| las rayas de cebra | son n&iacute;tidas      |    $$1 |<br>\n<br>\nAqu&iacute; hay un separador vertical:<br>\n<br>\n---<br>\n<br>\n```<br>\nbloque de c&oacute;digo<br>\nsin resaltado<br>\n```<br>\n<br>",
+    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hola, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* sin formato <br>\n* *con &eacute;nfasis*<br>\n&nbsp; * **con mucho &eacute;nfasis**<br>\n&nbsp; &nbsp; * ~~tachado~~<br>\n* `c&oacute;digo en l&iacute;nea`<br>\n<br>\n1. Lista numerada<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Enlace](https:\/\/www.google.com)<br>\n<br>\n<br>\nUna imagen: ![logo Markdown Here](http:\/\/adam-p.github.io\/manoderecha-tool-markdown\/img\/icon24.png)\n<br>\n<br>\n> Bloque de cita.&nbsp; <br>\n> *Con* **algo de** `markdown`.<br>\n<br>\nSi el soporte **TeX Math** est&aacute; activado, esta es la ecuaci&oacute;n cuadr&aacute;tica:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Cabecera 1<br>\n## Cabecera 2<br>\n### Cabecera 3<br>\n#### Cabecera 4<br>\n##### Cabecera 5<br>\n###### Cabecera 6<br>\n&nbsp; <br>\n| Tablas        | Son           | Guays  |<br>\n| ------------- |:-------------:| -----:|<br>\n| columna 3   | a la derecha | $$1600 |<br>\n| columna 2   | centrada      |   $$12 |<br>\n| las rayas de cebra | son n&iacute;tidas      |    $$1 |<br>\n<br>\nAqu&iacute; hay un separador vertical:<br>\n<br>\n---<br>\n<br>\n```<br>\nbloque de c&oacute;digo<br>\nsin resaltado<br>\n```<br>\n<br>",
     "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Markdown used for previewing user styling changes. Also shows users what can be done with Markdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "currently_in_use":{
@@ -339,10 +339,10 @@
     "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Markdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
   },
   "options_page__header_anchors_enabled_1":{
-    "message":"Esto es genial si quieres poner una tabla de contenidos u otros enlaces internos en tu contenido. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">Aprende cómo usarlo en la wiki de MDH.<\/a>"
+    "message":"Esto es genial si quieres poner una tabla de contenidos u otros enlaces internos en tu contenido. <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">Aprende cómo usarlo en la wiki de MDH.<\/a>"
   },
   "options_page__header_anchors_enabled_2":{
-    "message":"Está deshabilitado por defecto porque <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\/155\" target=\"_blank\">crea ruido visual en Thunderbird<\/a>. (Y la mayoría de la gente no usará esta característica.)"
+    "message":"Está deshabilitado por defecto porque <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/issues\/155\" target=\"_blank\">crea ruido visual en Thunderbird<\/a>. (Y la mayoría de la gente no usará esta característica.)"
   },
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>Activar saltos de l&iacute;nea GFM.<\/b>",

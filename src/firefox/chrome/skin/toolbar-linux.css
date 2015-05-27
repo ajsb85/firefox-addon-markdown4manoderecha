@@ -1,12 +1,12 @@
 
 @media (min-resolution: 2dppx) {
-  #toolbarButton-markdown_here > .toolbarbutton-icon,
-  #toolbarButton-markdown_here[disabled="true"] > .toolbarbutton-icon {
+  #toolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon,
+  #toolbarButton-manoderecha_tool_markdown[disabled="true"] > .toolbarbutton-icon {
     width: 24px;
   }
 
-  toolbar[iconsize="small"] #toolbarButton-markdown_here > .toolbarbutton-icon,
-  toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] > .toolbarbutton-icon {
+  toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon,
+  toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown[disabled="true"] > .toolbarbutton-icon {
     /* HACK! This *ought* to be set to 16px, but testing has shown that it needs
        to be 32px to look right. Additionally, you *can't* set the `height` to
        32px (or 16px) -- it seems like 24px works, but leaving it unset will

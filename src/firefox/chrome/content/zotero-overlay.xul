@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="chrome://markdown_here/skin/overlay.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://markdown_here/locale/strings.dtd">
+<?xml-stylesheet href="chrome://manoderecha_tool_markdown/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://manoderecha_tool_markdown/locale/strings.dtd">
 
-<?xml-stylesheet href="chrome://markdown_here/skin/toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://manoderecha_tool_markdown/skin/toolbar.css" type="text/css"?>
 
-<overlay id="markdown_here-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="manoderecha_tool_markdown-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script src="chrome://markdown_here/content/ff-overlay.js"/>
+  <script src="chrome://manoderecha_tool_markdown/content/ff-overlay.js"/>
 
   <toolbox id="navigator-toolbox">
     <toolbar id="toolbar-menubar">
@@ -14,12 +14,12 @@
         <menubar id="main-menubar">
           <menu id="fileMenu">
             <menupopup id="menu_FilePopup">
-              <menuseparator id="context-markdown_here-separator" insertafter="menu_newCollection"/>
-              <menuitem id="context-markdown_here" label="&context_menu_item;"
+              <menuseparator id="context-manoderecha_tool_markdown-separator" insertafter="menu_newCollection"/>
+              <menuitem id="context-manoderecha_tool_markdown" label="&context_menu_item;"
                         accesskey="&context_menu_item_shortcut;"
-                        insertafter="context-markdown_here-separator"
+                        insertafter="context-manoderecha_tool_markdown-separator"
                         class="menuitem-iconic"
-                        oncommand="markdown_here.onMenuItemCommand(event)"/>
+                        oncommand="manoderecha_tool_markdown.onMenuItemCommand(event)"/>
             </menupopup>
           </menu>
         </menubar>

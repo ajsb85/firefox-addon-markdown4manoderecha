@@ -36,7 +36,7 @@ Change Log
 
 * Changed styling of sub-ordered-lists to match Github's: Top level is still numbers, first sub level is Roman letters, second sub level is Roman numerals. Will make your email lists look totally pro. 
   - **Note**: In order to get this styling change, you will need to [reset your Primary Styling CSS](https://github.com/adam-p/markdown-here/wiki/Troubleshooting#getting-the-latest-primary-styling-css).
-  - Thanks to [Andrew Greenberg](https://github.com/wizardwerdna) for [pointing out](https://github.com/adam-p/markdown-here/issues/255) Github's styling, and an unnamed user in a [Google Groups post](https://groups.google.com/forum/#!topic/markdown-here/E-5tSHCAlpg) who also asked about list styling.
+  - Thanks to [Andrew Greenberg](https://github.com/wizardwerdna) for [pointing out](https://github.com/adam-p/markdown-here/issues/255) Github's styling, and an unnamed user in a [Google Groups post](https://groups.google.com/forum/#!topic/manoderecha-tool-markdown/E-5tSHCAlpg) who also asked about list styling.
 
 * [Fixed bug #237](https://github.com/adam-p/markdown-here/issues/237): Made Mozilla preferences handling more robust. Helps to deal with non-ANSI characters, synchronization, and corruption. 
   - Thanks to [flying-sheep](https://github.com/flying-sheep) for reporting the corruption problem and helping to diagnose it.
@@ -89,7 +89,7 @@ Change Log
 
 * [Fixed bug #141](https://github.com/adam-p/markdown-here/issues/141): Markdown Here in **Firefox would mysteriously stop working after a while** (aka the "ReferenceError: document is not defined" problem). It turns out that opening and closing a new browser window would trigger the bug.
   - This also manifested as ["Problem related with Zotero"](https://github.com/adam-p/markdown-here/issues/189) and ["Thunderbird: does not toggle when only the Write window is open"](https://github.com/adam-p/markdown-here/issues/175).
-  - Thanks to everyone who reported this and helped diagnose it: [Ryan Heaton](https://github.com/stoicflame) (who [originally reported the bug](https://groups.google.com/forum/#!topic/markdown-here/ikXFqkP77Ws)), [darickard](https://github.com/darickard), [JacobEvelyn](https://github.com/JacobEvelyn), [Lennaick](https://github.com/lennaick), [Sherwood Botsford](https://plus.google.com/u/0/+SherwoodBotsford), [Cyrus David](https://github.com/vohof), and [iagobozza](https://github.com/iagobozza), who [shared a screencast](https://github.com/adam-p/markdown-here/issues/189) that finally provided a reproduction scenario and allowed us to figure out the bug.
+  - Thanks to everyone who reported this and helped diagnose it: [Ryan Heaton](https://github.com/stoicflame) (who [originally reported the bug](https://groups.google.com/forum/#!topic/manoderecha-tool-markdown/ikXFqkP77Ws)), [darickard](https://github.com/darickard), [JacobEvelyn](https://github.com/JacobEvelyn), [Lennaick](https://github.com/lennaick), [Sherwood Botsford](https://plus.google.com/u/0/+SherwoodBotsford), [Cyrus David](https://github.com/vohof), and [iagobozza](https://github.com/iagobozza), who [shared a screencast](https://github.com/adam-p/markdown-here/issues/189) that finally provided a reproduction scenario and allowed us to figure out the bug.
 
 * **Added support for "retina"** (high PPI) displays. The Markdown Here icons should now be nice and crisp. Closes [issue #205](https://github.com/adam-p/markdown-here/issues/205).
   - Caveats: 
@@ -111,11 +111,11 @@ Change Log
 -------------------
 
 * [Fixed annoying bug #188](https://github.com/adam-p/markdown-here/issues/188): Keyboard shortcut was not working in Chrome+Gmail.
-  - Thanks to: [Paulo Diovani Gonçalves](https://github.com/paulodiovani), [Edmundo Junior](https://github.com/edmundojr), [Mike Lindegarde](https://github.com/mlindegarde), [Jordi Gerona](https://github.com/jordi9), [Dilek](https://github.com/averagewizard), [Hrusikesh Panda](https://github.com/mrchief), [Clay McKell](https://github.com/kcmckell), [Trey Harris](https://groups.google.com/forum/#!topic/markdown-here/SnQ4fVtQvQQ).
+  - Thanks to: [Paulo Diovani Gonçalves](https://github.com/paulodiovani), [Edmundo Junior](https://github.com/edmundojr), [Mike Lindegarde](https://github.com/mlindegarde), [Jordi Gerona](https://github.com/jordi9), [Dilek](https://github.com/averagewizard), [Hrusikesh Panda](https://github.com/mrchief), [Clay McKell](https://github.com/kcmckell), [Trey Harris](https://groups.google.com/forum/#!topic/manoderecha-tool-markdown/SnQ4fVtQvQQ).
 
 * With the help of our hard-working translators, **six new translations** were added. They are: Chinese, French, German, Russian, Spanish, and Turkish.
   - Thanks to: [Antoine Proulx](https://crowdin.com/profile/magicienap), [ebouchut](https://crowdin.com/profile/ebouchut), [Lennaick](https://crowdin.com/profile/lennaick), [leftaroundabout](https://crowdin.com/profile/leftaroundabout), [Pierre Quillery](https://crowdin.com/profile/dandelionmood), [Ko-Chih Wu](https://crowdin.com/profile/mecca831), [Masahiro Umegaki](https://crowdin.com/profile/ume), [dlkgenc](https://crowdin.com/profile/dlkgenc), [turkish123](https://crowdin.com/profile/turkish123), [sergiolunagarcia](https://crowdin.com/profile/sergiolunagarcia), [Alexis Morelle](https://crowdin.com/profile/almorelle), and my friend and co-worker [Eugene Fryntov](https://crowdin.com/profile/efryntov). (You're all also in the [contributors list](https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md).)
-  - If you'd like to start a new language, add to a not-quite-complete translation, or fix up something, please visit the [Markdown Here translation project on Crowdin](https://crowdin.com/project/markdown-here).
+  - If you'd like to start a new language, add to a not-quite-complete translation, or fix up something, please visit the [Markdown Here translation project on Crowdin](https://crowdin.com/project/manoderecha-tool-markdown).
 
 * **Updated [Highglight.js](http://highlightjs.org/)**, which is the syntax highlighting library used by Markdown Here.
   * **NOTE**: If your syntax higlighting looks wrong, switch your theme. Your styling might be stale.
@@ -135,7 +135,7 @@ Change Log
   * Deets for geeks: Below the rendered MD, in the same wrapper `div`, there is now a `div` with its `title` attribute set to the original MD (base64), containing a zero-width space, and styled to be zero-height. This delightful hack was the best combination of factors that ensured the raw MD would survive.
 
 * Added a partial Korean translation, thanks to [dotvezz](https://crowdin.net/profile/dotvezz). 
-  * **Do you speak something in addition to English?** [At least half](https://addons.mozilla.org/en-US/firefox/addon/markdown-here/statistics/usage/languages/?last=30) of all Markdown Here users are not English, but Japanese is the only complete translation we have. **It's easy to help with translations** -- just try out the [Crowdin project for Markdown Here](https://crowdin.net/project/markdown-here). Thanks!
+  * **Do you speak something in addition to English?** [At least half](https://addons.mozilla.org/en-US/firefox/addon/manoderecha-tool-markdown/statistics/usage/languages/?last=30) of all Markdown Here users are not English, but Japanese is the only complete translation we have. **It's easy to help with translations** -- just try out the [Crowdin project for Markdown Here](https://crowdin.net/project/manoderecha-tool-markdown). Thanks!
 
 * Added ability to disable GFM line breaks.
   * Thanks to [ase34](https://github.com/ase34) and [violahs](https://github.com/violahs) for [requesting this](https://github.com/adam-p/markdown-here/issues/103).
@@ -152,12 +152,12 @@ Change Log
 2014-01-29: v2.10.0
 -------------------
 
-* Markdown Here has been **translated into Japanese**! It's also **ready to be translated into your language**, so please take a look at [CONTRIBUTING.md](https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md) and our [Crowdin project](https://crowdin.net/project/markdown-here). Getting involved is super easy.
-  * Huge thanks to [lambdaalice](https://github.com/lambdalice), who provided a [full Japanese translation](https://groups.google.com/forum/#!topic/markdown-here/2XoUrKY_CpQ) out of the blue, forcing me to [do the work](https://github.com/adam-p/markdown-here/issues/143) to be able to use it.
+* Markdown Here has been **translated into Japanese**! It's also **ready to be translated into your language**, so please take a look at [CONTRIBUTING.md](https://github.com/adam-p/markdown-here/blob/master/CONTRIBUTING.md) and our [Crowdin project](https://crowdin.net/project/manoderecha-tool-markdown). Getting involved is super easy.
+  * Huge thanks to [lambdaalice](https://github.com/lambdalice), who provided a [full Japanese translation](https://groups.google.com/forum/#!topic/manoderecha-tool-markdown/2XoUrKY_CpQ) out of the blue, forcing me to [do the work](https://github.com/adam-p/markdown-here/issues/143) to be able to use it.
 
-* The **automatic addition of anchors to headings** is now an option and **disabled by default**. Guido Hoermann quite rightly [pointed out](https://groups.google.com/d/msg/markdown-here/eaq1JoNhyws/s02CV8rTJ30J) that it creates annoying visual noise in Thunderbird. It's probably not used enough to justify being enabled by default, and it's very easy to re-enable it (bottom of the options page).
+* The **automatic addition of anchors to headings** is now an option and **disabled by default**. Guido Hoermann quite rightly [pointed out](https://groups.google.com/d/msg/manoderecha-tool-markdown/eaq1JoNhyws/s02CV8rTJ30J) that it creates annoying visual noise in Thunderbird. It's probably not used enough to justify being enabled by default, and it's very easy to re-enable it (bottom of the options page).
 
-* The **"forgot-to-render" check** that was added in version 2.9.2 is now **enabled by default**. As always, please [file a bug](https://github.com/adam-p/markdown-here/issues/new) or [otherwise report](https://groups.google.com/forum/#!forum/markdown-here) if you have any problems or suggestions for improvement.
+* The **"forgot-to-render" check** that was added in version 2.9.2 is now **enabled by default**. As always, please [file a bug](https://github.com/adam-p/markdown-here/issues/new) or [otherwise report](https://groups.google.com/forum/#!forum/manoderecha-tool-markdown) if you have any problems or suggestions for improvement.
 
 * Markdown Here now works with **older versions of Chrome and Chromium**. (Tested on version 24 and 25, which didn't work before but do now.)
   * Thanks to [Dustin Engstrom](https://github.com/engstrom) for providing the fix for this (and for submitting the first MDH code pull request!). Thanks to [Adam Kruger](https://github.com/adamkruger) for reporting the problem.
@@ -232,7 +232,7 @@ Change Log
 
 * New feature: **Forgot-to-render detection**. Have you ever forgotten to make your Markdown pretty before sending your email? Me too. Now Markdown Here will detect when your email contains raw Markdown and will give you second chance to go back and render it before sending.
   * This feature is supported in Thunderbird (and Postbox), and for Gmail in Chrome, Firefox, Opera, and Safari. (Pull requests welcome for Hotmail, Yahoo, etc.)
-  * For now this feature is off by default because I'm nervous about too many false positives driving people crazy. But please opt in! The checkbox to enable it is at the bottom of the MDH Options page. And please give feedback on how the feature does or doesn't work for you, either in the [Github issue](https://github.com/adam-p/markdown-here/issues/90) or the [MDH Google Group](https://groups.google.com/forum/#!forum/markdown-here).
+  * For now this feature is off by default because I'm nervous about too many false positives driving people crazy. But please opt in! The checkbox to enable it is at the bottom of the MDH Options page. And please give feedback on how the feature does or doesn't work for you, either in the [Github issue](https://github.com/adam-p/markdown-here/issues/90) or the [MDH Google Group](https://groups.google.com/forum/#!forum/manoderecha-tool-markdown).
   * Thanks to [Petr Pudlák](https://github.com/ppetr) for requesting this in [issue #90](https://github.com/adam-p/markdown-here/issues/90), [Zhou Qiang](https://github.com/zhouqianghfut) in [issue #96](https://github.com/adam-p/markdown-here/issues/96), [Adam Backstrom](https://github.com/abackstrom) in [issue #98](https://github.com/adam-p/markdown-here/issues/98).
 
 * **Compatibility improvements!**
@@ -259,7 +259,7 @@ Change Log
 * Added the ability to set **site-specific styles**. To see an example of how to do this, either reset your Primary Styling CSS or [take a look at the source for it](https://github.com/adam-p/markdown-here/blob/6d3c2efea23219b58da183df23da111f8fd9febb/src/common/default.css#L15).
 
 * [Fixed bug](https://github.com/adam-p/markdown-here/issues/84): Math: single-character formula won't render.
-  * Thanks to kbeach who reported this [in a Google Groups post](https://groups.google.com/forum/#!msg/markdown-here/tolrITkqrx0/phElyPBBAhYJ).
+  * Thanks to kbeach who reported this [in a Google Groups post](https://groups.google.com/forum/#!msg/manoderecha-tool-markdown/tolrITkqrx0/phElyPBBAhYJ).
   * Thanks again to [Emanuele D'Osualdo](https://github.com/bordaigorl) for providing the fix.
 
 * [Fixed bug](https://github.com/adam-p/markdown-here/issues/83): `[a](b)` links shouldn't expand inside of a code block.
@@ -274,7 +274,7 @@ Change Log
 2013-08-24: v2.8.2
 ------------------
 
-Added support for [**Opera**](http://www.opera.com)! Get it [here](https://addons.opera.com/en/extensions/details/markdown-here/).
+Added support for [**Opera**](http://www.opera.com)! Get it [here](https://addons.opera.com/en/extensions/details/manoderecha-tool-markdown/).
 
 2013-06-23: v2.8.1
 ------------------
@@ -301,7 +301,7 @@ Added support for [**Opera**](http://www.opera.com)! Get it [here](https://addon
 2013-05-19: v2.8.0
 ------------------
 
-* **Markdown Here now supports Safari!** [Get it here.](http://markdown-here.com/get.html)
+* **Markdown Here now supports Safari!** [Get it here.](http://manoderecha-tool-markdown.com/get.html)
   * Thanks to users [unscriptable](https://github.com/unscriptable) and [martinsvalin](https://github.com/martinsvalin) for [requesting it](https://github.com/adam-p/markdown-here/issues/38).
 
 * Fixed bug in Firefox v23 (current Aurora): Options page wasn't working. ([See details.](https://github.com/adam-p/markdown-here/commit/c20b7e4841f325bed3201ea9a98b3f6c986cf8cc))
@@ -342,14 +342,14 @@ Added support for [**Opera**](http://www.opera.com)! Get it [here](https://addon
     * You might notice the button enabled when you're typing in places other than your email page -- try it out! You might discover that Markdown Here works somewhere new. If you do, please [add it to the compatibility wiki](https://github.com/adam-p/markdown-here/wiki/Compatibility).
   * In Thunderbird and Postbox the appears on the formatting toolbar.
   * In Firefox, Thunderbird, and Postbox you can add/remove/move the button by right-clicking on the toolbar, clicking "Customize", and then dragging the button around. In Chrome you can remove it by right-click on it.
-  * If you have any feedback about the new button, please join the ["markdown-here" Google Group discussion](https://groups.google.com/d/topic/markdown-here/NjQRYcD1mgY/discussion).
+  * If you have any feedback about the new button, please join the ["manoderecha-tool-markdown" Google Group discussion](https://groups.google.com/d/topic/manoderecha-tool-markdown/NjQRYcD1mgY/discussion).
   * Thanks to user jakov for [suggesting this feature in issue #34](https://github.com/adam-p/markdown-here/issues/34).
 
 * **Default styling changes**. Note that you'll have to reset your styles to get the new defaults (click "**Reset to Default**" on the options page). The changes include:
   * Slightly smaller header font size.
   * Less space between list items.
   * Link styling is now more standard (e.g., underlines in Gmail).
-  * If you have any feedback on the default styling, please join the [Google Group discussion](https://groups.google.com/d/topic/markdown-here/V2n5ZxgzGQw/discussion).
+  * If you have any feedback on the default styling, please join the [Google Group discussion](https://groups.google.com/d/topic/manoderecha-tool-markdown/V2n5ZxgzGQw/discussion).
   * Thanks to [Casey Watts](http://caseywatts.github.com/2012/12/17/markdown_in_gmail/) for his input.
 
 * Added a "Basic Usage" section to the options page. This is in response to [a tweet](https://twitter.com/KSuzukiii/status/294376172295446528) from user KSuzukii.

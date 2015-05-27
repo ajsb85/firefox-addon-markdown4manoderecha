@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
   "name": "__MSG_app_name__",
-  "version": "2.11.8",
+  "version": "0.1",
   "description": "__MSG_app_slogan__",
-  "homepage_url": "http://markdown-here.com",
+  "homepage_url": "http://manoderecha.net",
   "minimum_chrome_version": "6",
   "default_locale": "en",
   "icons": {
@@ -24,7 +24,7 @@
         "common/jsHtmlToText.js",
         "common/marked.js",
         "common/mdh-html-to-text.js",
-        "common/markdown-here.js",
+        "common/manoderecha-tool-markdown.js",
         "chrome/contentscript.js"
         ]
     }

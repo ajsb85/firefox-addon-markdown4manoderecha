@@ -23,10 +23,10 @@ alert('Hello Markdown');
 來一些特殊範例 -- 一份diff：
 
 ```diff
-diff --git a/src/common/markdown-here.js b/src/common/markdown-here.js
+diff --git a/src/common/manoderecha-tool-markdown.js b/src/common/manoderecha-tool-markdown.js
 index 24dcb97..20c36a1 100644
---- a/src/common/markdown-here.js
-+++ b/src/common/markdown-here.js
+--- a/src/common/manoderecha-tool-markdown.js
++++ b/src/common/manoderecha-tool-markdown.js
 @@ -201,12 +179,14 @@ function makeStylesExplicit(wrapperElem, css) {
 -        applyStyleToElement(rule.style, selectorMatches[j]);
 +        styleAttr = selectorMatches[j].getAttribute('style') || '';

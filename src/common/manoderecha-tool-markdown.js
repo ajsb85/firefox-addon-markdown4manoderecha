@@ -49,7 +49,7 @@ if (typeof(Utils) === 'undefined' &&
     typeof(safari) === 'undefined' && typeof(chrome) === 'undefined') {
   var scriptLoader = Components.classes["@mozilla.org/moz/jssubscript-loader;1"]
                                .getService(Components.interfaces.mozIJSSubScriptLoader);
-  scriptLoader.loadSubScript('resource://markdown_here_common/utils.js');
+  scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/utils.js');
 }
 
 // For debugging purposes. An external service is required to log with Firefox.
@@ -140,7 +140,7 @@ function getOperationalRange(focusedElem) {
     // If the sig is an element node, set a class indicating that it's a sig.
     // This gives us (or the user) the option of styling differently.
     if (sig.nodeType === sig.ELEMENT_NODE) {
-      sig.classList.add('markdown-here-signature');
+      sig.classList.add('manoderecha-tool-markdown-signature');
     }
 
     if (range.isPointInRange(sig, 0)) {
@@ -227,7 +227,7 @@ function getMarkdownStylesheet(elem, css) {
 
   // Create a style element
   styleElem = elem.ownerDocument.createElement('style');
-  styleElem.setAttribute('title', 'markdown-here-styles');
+  styleElem.setAttribute('title', 'manoderecha-tool-markdown-styles');
 
   // Set the CSS in the style element
   styleElem.appendChild(elem.ownerDocument.createTextNode(css));
@@ -237,7 +237,7 @@ function getMarkdownStylesheet(elem, css) {
 
   // Find the stylesheet that we just created
   for (i = 0; i < elem.ownerDocument.styleSheets.length; i++) {
-    if (elem.ownerDocument.styleSheets[i].title === 'markdown-here-styles') {
+    if (elem.ownerDocument.styleSheets[i].title === 'manoderecha-tool-markdown-styles') {
       stylesheet = elem.ownerDocument.styleSheets[i];
       break;
     }
@@ -281,7 +281,7 @@ function makeStylesExplicit(wrapperElem, css) {
       // The check for `elem.classList` stop us if we hit a non-element node
       // while going up through the parents.
       while (elem && (typeof(elem.classList) !== 'undefined')) {
-        if (elem.classList.contains('markdown-here-exclude')) {
+        if (elem.classList.contains('manoderecha-tool-markdown-exclude')) {
           elem = 'excluded';
           break;
         }
@@ -445,7 +445,7 @@ function renderMarkdown(focusedElem, selectedRange, markdownRenderer, renderComp
     // Wrap our pretty HTML in a <div> wrapper.
     // We'll use the wrapper as a marker to indicate that we're in a rendered state.
     mdHtml =
-      '<div class="markdown-here-wrapper" ' +
+      '<div class="manoderecha-tool-markdown-wrapper" ' +
            'data-md-url="' + Utils.getTopURL(focusedElem.ownerDocument.defaultView, true) + '">' +
         mdHtml +
         rawHolder +
@@ -467,7 +467,7 @@ function renderMarkdown(focusedElem, selectedRange, markdownRenderer, renderComp
             wrapper.ownerDocument.defaultView.WebKitMutationObserver;
       if (typeof(SupportedMutationObserver) !== 'undefined') {
         var observer = new SupportedMutationObserver(function(mutations) {
-          wrapper.setAttribute('markdown-here-wrapper-content-modified', true);
+          wrapper.setAttribute('manoderecha-tool-markdown-wrapper-content-modified', true);
           observer.disconnect();
         });
         observer.observe(wrapper, { childList: true, characterData: true, subtree: true });
@@ -557,7 +557,7 @@ function markdownHere(document, markdownRenderer, logger, renderComplete) {
     var yesToAll = false;
     for (i = 0; i < wrappers.length; i++) {
       // Has the content been modified by the user since rendering
-      if (wrappers[i].getAttribute('markdown-here-wrapper-content-modified') &&
+      if (wrappers[i].getAttribute('manoderecha-tool-markdown-wrapper-content-modified') &&
           !yesToAll) {
 
           if (wrappers[i].ownerDocument.defaultView.confirm(Utils.getMessage('unrendering_modified_markdown_warning'))) {

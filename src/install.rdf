@@ -4,8 +4,8 @@
 
     <Description about="urn:mozilla:install-manifest">
         <em:type>2</em:type> <!-- 2 : Extension -->
-        <em:id>markdown-here@adam.pritchard</em:id>
-        <em:version>2.11.8</em:version>
+        <em:id>{4e3c1d8a-20e9-4cae-936f-ec08069d7a65}</em:id>
+        <em:version>0.1</em:version>
 
         <em:targetApplication>
             <Description>
@@ -42,7 +42,7 @@
         <em:localized>
           <Description>
             <em:locale>de</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>E-Mail in Markdown schreiben, dann aufhübschen lassen.</em:description>
           </Description>
         </em:localized>
@@ -50,7 +50,7 @@
         <em:localized>
           <Description>
             <em:locale>en</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Write your email in Markdown, then make it pretty.</em:description>
           </Description>
         </em:localized>
@@ -58,7 +58,7 @@
         <em:localized>
           <Description>
             <em:locale>es</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Escribe tu correo electrónico en Markdown, y hazlo bonito.</em:description>
           </Description>
         </em:localized>
@@ -66,7 +66,7 @@
         <em:localized>
           <Description>
             <em:locale>fr</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Écrivez votre courriel avec Markdown, puis rendez-le attrayant.</em:description>
           </Description>
         </em:localized>
@@ -74,7 +74,7 @@
         <em:localized>
           <Description>
             <em:locale>it</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Scrivi la tua email in Markdown, quindi rendila bella.</em:description>
           </Description>
         </em:localized>
@@ -82,7 +82,7 @@
         <em:localized>
           <Description>
             <em:locale>ja</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Markdownで電子メールを美しく</em:description>
           </Description>
         </em:localized>
@@ -90,7 +90,7 @@
         <em:localized>
           <Description>
             <em:locale>ko</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Write your email in Markdown, then make it pretty.</em:description>
           </Description>
         </em:localized>
@@ -98,7 +98,7 @@
         <em:localized>
           <Description>
             <em:locale>pl</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Napisz e-mail w języku Markdown a następnie go upiększ.</em:description>
           </Description>
         </em:localized>
@@ -106,7 +106,7 @@
         <em:localized>
           <Description>
             <em:locale>pt-BR</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Escreva seu email em Markdown e o torne elegante.</em:description>
           </Description>
         </em:localized>
@@ -114,7 +114,7 @@
         <em:localized>
           <Description>
             <em:locale>ru</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Напишите ваш емейл в Markdown и сделайте его стильным.</em:description>
           </Description>
         </em:localized>
@@ -122,7 +122,7 @@
         <em:localized>
           <Description>
             <em:locale>tr</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>Markdown ile email yaz, sonra da güzelleştir.</em:description>
           </Description>
         </em:localized>
@@ -130,7 +130,7 @@
         <em:localized>
           <Description>
             <em:locale>zh-CN</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>用Markdown写一封漂亮的电子邮件。</em:description>
           </Description>
         </em:localized>
@@ -138,7 +138,7 @@
         <em:localized>
           <Description>
             <em:locale>zh-TW</em:locale>
-            <em:name>Markdown Here</em:name>
+            <em:name>Markdown manoderecha</em:name>
             <em:description>用Markdown寫一封漂亮的電子郵件。</em:description>
           </Description>
         </em:localized>
@@ -146,10 +146,10 @@
 <!-- /i18n -->
 
         <!-- There also needs to be a top-level copy of these fields. -->
-        <em:name>Markdown Here</em:name>
+        <em:name>Markdown manoderecha</em:name>
         <em:description>Write your email in Markdown, then make it pretty.</em:description>
 
-        <em:iconURL>resource://markdown_here_common/images/icon128.png</em:iconURL>
+        <em:iconURL>resource://manoderecha_tool_markdown_common/images/icon128.png</em:iconURL>
         <em:homepageURL>https://github.com/adam-p/markdown-here</em:homepageURL>
 
         <em:optionsURL>
@@ -158,7 +158,7 @@
                    our options page. */
                 var windowMediator = Components.classes['@mozilla.org/appshell/window-mediator;1']
                                                .getService(Components.interfaces.nsIWindowMediator);
-                var optionsUrl = 'resource://markdown_here_common/options.html';
+                var optionsUrl = 'resource://manoderecha_tool_markdown_common/options.html';
                 if (navigator.userAgent.indexOf('Thunderbird') >= 0 ||
                     navigator.userAgent.indexOf('Icedove') >= 0) {
                     windowMediator.getMostRecentWindow('mail:3pane')
@@ -169,12 +169,12 @@
                     /* Haven't yet figured out how to open a tab in Postbox */
                     var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
                                             .getService(Components.interfaces.nsIPromptService);
-                    prompts.alert(null, 'Markdown Here', 'Sorry, the options page is not supported for Postbox.');
+                    prompts.alert(null, 'Markdown manoderecha', 'Sorry, the options page is not supported for Postbox.');
                 }
                 else if (navigator.userAgent.indexOf('Zotero') >= 0) {
                     var prompts = Components.classes["@mozilla.org/embedcomp/prompt-service;1"]
                                             .getService(Components.interfaces.nsIPromptService);
-                    prompts.alert(null, 'Markdown Here', 'Sorry, the options page is not supported for Zotero.');
+                    prompts.alert(null, 'Markdown manoderecha', 'Sorry, the options page is not supported for Zotero.');
 
                     /* This code does open the options page in a separate window,
                        but the page can't communicate with the background services

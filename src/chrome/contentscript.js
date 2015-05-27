@@ -270,7 +270,7 @@ setInterval(intervalCheck, 2000);
  */
 
 function showUpgradeNotification(html) {
-  if (document.querySelector('#markdown-here-upgrade-notification-content')) {
+  if (document.querySelector('#manoderecha-tool-markdown-upgrade-notification-content')) {
     return;
   }
 
@@ -281,7 +281,7 @@ function showUpgradeNotification(html) {
   // Note that `elem` is no longer valid after we call Utils.saferSetOuterHTML on it.
 
   // Add click handlers so that we can clear the notification.
-  var optionsLink = document.querySelector('#markdown-here-upgrade-notification-link');
+  var optionsLink = document.querySelector('#manoderecha-tool-markdown-upgrade-notification-link');
   optionsLink.addEventListener('click', function(event) {
     clearUpgradeNotification(true);
 
@@ -294,7 +294,7 @@ function showUpgradeNotification(html) {
     event.preventDefault();
   });
 
-  var closeLink = document.querySelector('#markdown-here-upgrade-notification-close');
+  var closeLink = document.querySelector('#manoderecha-tool-markdown-upgrade-notification-close');
   closeLink.addEventListener('click', function(event) {
     event.preventDefault();
     clearUpgradeNotification(true);
@@ -308,7 +308,7 @@ function clearUpgradeNotification(notifyBackgroundScript) {
       { action: 'upgrade-notification-shown' });
   }
 
-  var elem = document.querySelector('#markdown-here-upgrade-notification-content');
+  var elem = document.querySelector('#manoderecha-tool-markdown-upgrade-notification-content');
   if (elem) {
     document.body.removeChild(elem);
   }

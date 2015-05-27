@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet href="chrome://markdown_here/skin/overlay.css" type="text/css"?>
-<!DOCTYPE overlay SYSTEM "chrome://markdown_here/locale/strings.dtd">
+<?xml-stylesheet href="chrome://manoderecha_tool_markdown/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://manoderecha_tool_markdown/locale/strings.dtd">
 
-<?xml-stylesheet href="chrome://markdown_here/skin/toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://manoderecha_tool_markdown/skin/toolbar.css" type="text/css"?>
 
-<overlay id="markdown_here-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="manoderecha_tool_markdown-overlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-  <script src="chrome://markdown_here/content/ff-overlay.js"/>
+  <script src="chrome://manoderecha_tool_markdown/content/ff-overlay.js"/>
 
   <popup id="contentAreaContextMenu">
-    <menuitem id="context-markdown_here" label="&context_menu_item;"
+    <menuitem id="context-manoderecha_tool_markdown" label="&context_menu_item;"
               accesskey="&context_menu_item_shortcut;"
               class="menuitem-iconic"
-              oncommand="markdown_here.onMenuItemCommand(event)"/>
+              oncommand="manoderecha_tool_markdown.onMenuItemCommand(event)"/>
   </popup>
 
   <hbox id="urlbar-icons">
-    <image id="pageAction-markdown_here" insertafter="star-button"
-           onclick="markdown_here.onToolbarButtonCommand(event)"
+    <image id="pageAction-manoderecha_tool_markdown" insertafter="star-button"
+           onclick="manoderecha_tool_markdown.onToolbarButtonCommand(event)"
            tooltiptext="&toggle_button_tooltip;" />
   </hbox>
 
   <toolbarpalette id="BrowserToolbarPalette">
-    <toolbarbutton id="toolbarButton-markdown_here"
+    <toolbarbutton id="toolbarButton-manoderecha_tool_markdown"
                    class="toolbarbutton-1 chromeclass-toolbar-additional"
                    label="&toggle_button_text;"
                    tooltiptext="&toggle_button_tooltip;"
-                   oncommand="markdown_here.onToolbarButtonCommand(event)" />
+                   oncommand="manoderecha_tool_markdown.onToolbarButtonCommand(event)" />
   </toolbarpalette>
 </overlay>

@@ -125,19 +125,19 @@
     "description":"A section title"
   },
   "options_page__resources_cheatsheet_link":{
-    "message":"如果你刚开始接触Markdown， <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Markdown-Here-Cheatsheet\" target=\"_blank\">Markdown Here Cheatsheet<\/a> 是本不错的入门手册."
+    "message":"如果你刚开始接触Markdown， <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Markdown-Here-Cheatsheet\" target=\"_blank\">Markdown Here Cheatsheet<\/a> 是本不错的入门手册."
   },
   "options_page__advanced_usage":{
-    "message":"如果要查看更多信息和用法，参见 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\" target=\"_blank\">Markdown Here项目主页<\/a>. 你会在下方看到选项."
+    "message":"如果要查看更多信息和用法，参见 <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\" target=\"_blank\">Markdown Here项目主页<\/a>. 你会在下方看到选项."
   },
   "options_page__ggroup":{
-    "message":"资询， 讨论，或者只是和同道中人打个招呼，戳 <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\" target=\"_blank\">markdown-here Google Group<\/a>."
+    "message":"资询， 讨论，或者只是和同道中人打个招呼，戳 <a href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/manoderecha-tool-markdown\" target=\"_blank\">manoderecha-tool-markdown Google Group<\/a>."
   },
   "options_page__mdh_wiki":{
-    "message":"访问 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\" target=\"_blank\">Markdown Here wiki<\/a> 以查看 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Compatibility\" target=\"_blank\">MDH适用的服务<\/a> 以及更多 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks\" target=\"_blank\">使用提示和窍门<\/a>."
+    "message":"访问 <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\" target=\"_blank\">Markdown Here wiki<\/a> 以查看 <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Compatibility\" target=\"_blank\">MDH适用的服务<\/a> 以及更多 <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Tips-and-Tricks\" target=\"_blank\">使用提示和窍门<\/a>."
   },
   "options_page__next_steps":{
-    "message":"如果你对Markdown Here的未来发展感兴趣, 查看 <a href=\"https:\/\/github.com\/adam-p\/markdown-here#next-steps\" target=\"_blank\">README的Next Steps部分<\/a>。"
+    "message":"如果你对Markdown Here的未来发展感兴趣, 查看 <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown#next-steps\" target=\"_blank\">README的Next Steps部分<\/a>。"
   },
   "options_page__donate_plea_1":{
     "message":"一旦你发现Markdown Here相当不错，请帮助我给我妻子买一些鲜花，这样她也不会为我在此花的大量工作而感到沮丧。 <strong>谢谢！<\/strong>"
@@ -298,20 +298,20 @@
     "message":"当你发送电邮时, 这个选项会检查邮件内容是不是未转换的Markdown. 这可能会干扰你正常发送邮件."
   },
   "options_page__forgot_to_render_3":{
-    "message":"如果你禁用了此项, <em>请<\/em> 告知我为什么和如何做更好. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/markdown-here\" target=\"_blank\">a post on the \"markdown-here\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\" target=\"_blank\">an issue in the Github project<\/a>. 谢谢."
+    "message":"如果你禁用了此项, <em>请<\/em> 告知我为什么和如何做更好. Create <a href=\"https:\/\/groups.google.com\/forum\/#!forum\/manoderecha-tool-markdown\" target=\"_blank\">a post on the \"manoderecha-tool-markdown\" Google Group<\/a> or <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/issues\" target=\"_blank\">an issue in the Github project<\/a>. 谢谢."
   },
   "options_page__contributing_title":{
     "message":"贡献",
     "description":"A section title"
   },
   "options_page__contributing_1":{
-    "message":"<strong>如果你曾经把一个代码块写进电子邮件，你就可以帮助Markdown Here做的更好.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
+    "message":"<strong>如果你曾经把一个代码块写进电子邮件，你就可以帮助Markdown Here做的更好.<\/strong> <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/blob\/master\/CONTRIBUTING.md\" target=\"_blank\">CONTRIBUTING.md<\/a>"
   },
   "options_page__contributing_2":{
-    "message":"帮助翻译Markdown Here. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">欢迎翻译.<\/a>"
+    "message":"帮助翻译Markdown Here. <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/blob\/master\/CONTRIBUTING.md#translation\" target=\"_blank\">欢迎翻译.<\/a>"
   },
   "options_page__footer_1":{
-    "message":"<em>Markdown Here<\/em> 是开源的. 要提问, 报告错误, 请求新特性, 或参与开发, 访问 <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/markdown-here\">Github项目主页<\/a> 或 <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/markdown-here\">\"markdown-here\" Google Group<\/a>.",
+    "message":"<em>Markdown Here<\/em> 是开源的. 要提问, 报告错误, 请求新特性, 或参与开发, 访问 <a target=\"_blank\" href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\">Github项目主页<\/a> 或 <a target=\"_blank\" href=\"https:\/\/groups.google.com\/forum\/?fromgroups=#!forum\/manoderecha-tool-markdown\">\"manoderecha-tool-markdown\" Google Group<\/a>.",
     "description":"part of the page footer text"
   },
   "options_page__footer_2":{
@@ -323,7 +323,7 @@
     "description":"message that shows when user changes have been saved"
   },
   "options_page__preview_markdown":{
-    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Markdown Here logo](http:\/\/adam-p.github.io\/markdown-here\/img\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `markdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
+    "message":"```javascript<br>\nfunction syntaxHighlighting() {<br>\n&nbsp; var n = 33;<br>\n&nbsp; var s = \"hello, こんにちは\";<br>\n&nbsp; console.log(s);<br>\n}<br>\n```<br>\n<br>\n* plain<br>\n* *emphasis*<br>\n&nbsp; * **strong emphasis**<br>\n&nbsp; &nbsp; * ~~strikethrough~~<br>\n* `inline code`<br>\n<br>\n1. Numbered list<br>\n&nbsp;&nbsp;&nbsp;1. Numbered sub-list<br>\n&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Numbered sub-sub-list<br>\n2. [Link](https:\/\/www.google.com)<br>\n<br>\n<br>\nAn image: ![Markdown Here logo](http:\/\/adam-p.github.io\/manoderecha-tool-markdown\/img\/icon24.png)\n<br>\n<br>\n> Block quote.&nbsp; <br>\n> *With* **some** `markdown`.<br>\n<br>\nIf **TeX Math** support is enabled, this is the quadratic equation:&nbsp;<br>\n$$-b \\pm \\sqrt{b^2 - 4ac} \\over 2a$$<br>\n<br>\n# Header 1<br>\n## Header 2<br>\n### Header 3<br>\n#### Header 4<br>\n##### Header 5<br>\n###### Header 6<br>\n&nbsp; <br>\n| Tables        | Are           | Cool  |<br>\n| ------------- |:-------------:| -----:|<br>\n| column 3 is   | right-aligned | $$1600 |<br>\n| column 2 is   | centered      |   $$12 |<br>\n| zebra stripes | are neat      |    $$1 |<br>\n<br>\nHere's a horizontal rule:<br>\n<br>\n---<br>\n<br>\n```<br>\ncode block<br>\nwith no highlighting<br>\n```<br>\n<br>\n",
     "description":"This doesn't need to be translated, unless you want to make it more relevant to your language. The raw Markdown used for previewing user styling changes. Also shows users what can be done with Markdown. Please note that the double dollar signs ($$) are needed to make a single dollar sign in the application."
   },
   "currently_in_use":{
@@ -339,10 +339,10 @@
     "description":"Label for the checkbox that enables the automatic header anchors feature. This means that an 'anchor' is created at every heading (H1, H2, etc.) in the user's Markdown. The user can then create links that will jump to these anchors, like in the table of contents of a document."
   },
   "options_page__header_anchors_enabled_1":{
-    "message":"如果你想把一个表的内容或其他内部链接加入到你的内容中，这会很有用. <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">在MDH wiki中查看如何使用.<\/a>"
+    "message":"如果你想把一个表的内容或其他内部链接加入到你的内容中，这会很有用. <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/wiki\/Tips-and-Tricks#wiki-header-anchors\" target=\"_blank\">在MDH wiki中查看如何使用.<\/a>"
   },
   "options_page__header_anchors_enabled_2":{
-    "message":"默认禁用，因为它会 <a href=\"https:\/\/github.com\/adam-p\/markdown-here\/issues\/155\" target=\"_blank\">在Thunderbird产生视觉干扰<\/a>. (况且大多数人用不到.)"
+    "message":"默认禁用，因为它会 <a href=\"https:\/\/github.com\/adam-p\/manoderecha-tool-markdown\/issues\/155\" target=\"_blank\">在Thunderbird产生视觉干扰<\/a>. (况且大多数人用不到.)"
   },
   "options_page__gfm_line_breaks_enabled_label":{
     "message":"<b>启用GFM换行。<\/b>",

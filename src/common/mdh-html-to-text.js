@@ -21,8 +21,8 @@ if (typeof(htmlToText) === 'undefined' &&
     typeof(Components.utils) !== 'undefined') {
   var scriptLoader = Components.classes["@mozilla.org/moz/jssubscript-loader;1"]
                                .getService(Components.interfaces.mozIJSSubScriptLoader);
-  scriptLoader.loadSubScript('resource://markdown_here_common/jsHtmlToText.js');
-  scriptLoader.loadSubScript('resource://markdown_here_common/utils.js');
+  scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/jsHtmlToText.js');
+  scriptLoader.loadSubScript('resource://manoderecha_tool_markdown_common/utils.js');
 }
 
 
@@ -66,7 +66,7 @@ Returns an object that looks like this:
   }]
 }
 
-NOTE: Maybe it would be better to do this stuff in markdown-here.js, where
+NOTE: Maybe it would be better to do this stuff in manoderecha-tool-markdown.js, where
 we have the DOM available? String-processing the HTML seems suboptimal.
 */
 MdhHtmlToText.prototype._preprocess = function() {
@@ -275,7 +275,7 @@ MdhHtmlToText.prototype.excludeTagBlocks = function(
           this.preprocessInfo.exclusions.push({
             placeholder: placeholder,
             content:
-              '<div class="markdown-here-exclude">' +
+              '<div class="manoderecha-tool-markdown-exclude">' +
               (wrapInPara ? '<p>' : '') +
               this.preprocessInfo.html.slice(currentOpenIndex, closeIndex+closeTagLength) +
               (wrapInPara ? '</p>' : '') +

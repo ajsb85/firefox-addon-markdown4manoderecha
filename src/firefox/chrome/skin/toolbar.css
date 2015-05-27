@@ -2,17 +2,17 @@
  * Page action (button in address bar)
  */
 
-/* Note that `#pageAction-markdown_here` is an `<image>`, so the `width` can be
+/* Note that `#pageAction-manoderecha_tool_markdown` is an `<image>`, so the `width` can be
    set directly. */
-#pageAction-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon14.png");
+#pageAction-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon14.png");
   width: 14px;
   height: 14px;
 }
 
 @media (min-resolution: 2dppx) {
-  #pageAction-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon14@2x.png");
+  #pageAction-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon14@2x.png");
   }
 }
 
@@ -21,18 +21,18 @@
  * Context menu
  */
 
-#context-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16.png");
+#context-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16.png");
 }
 
 @media (min-resolution: 2dppx) {
-  #context-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon16@2x.png");
+  #context-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16@2x.png");
   }
 }
 
 /* Ubuntu doesn't show the menu item icon without coaxing. */
-#context-markdown_here > .menu-iconic-left {
+#context-manoderecha_tool_markdown > .menu-iconic-left {
   visibility: visible !important;
 }
 
@@ -49,45 +49,45 @@
 /* The not-small toolbar (which doesn't seem to be used in modern Firefox). */
 /* This also controls how the icon will look in the toolbar customize palette. */
 
-#toolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon24.png");
+#toolbarButton-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon24.png");
 }
 
 @media (min-resolution: 2dppx) {
-  #toolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon24@2x.png");
+  #toolbarButton-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon24@2x.png");
   }
 }
 
-#toolbarButton-markdown_here[disabled="true"] {
-  list-style-image: url("resource://markdown_here_common/images/icon24-bw.png");
+#toolbarButton-manoderecha_tool_markdown[disabled="true"] {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon24-bw.png");
 }
 
 @media (min-resolution: 2dppx) {
-  #toolbarButton-markdown_here[disabled="true"] {
-    list-style-image: url("resource://markdown_here_common/images/icon24-bw@2x.png");
+  #toolbarButton-manoderecha_tool_markdown[disabled="true"] {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon24-bw@2x.png");
   }
 }
 
 /* The "small" icon toolbar, which is the standard. */
 
-toolbar[iconsize="small"] #toolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16.png");
+toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16.png");
 }
 
 @media (min-resolution: 2dppx) {
-  toolbar[iconsize="small"] #toolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon16@2x.png");
+  toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16@2x.png");
   }
 }
 
-toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] {
-  list-style-image: url("resource://markdown_here_common/images/icon16-bw.png");
+toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown[disabled="true"] {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16-bw.png");
 }
 
 @media (min-resolution: 2dppx) {
-  toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] {
-    list-style-image: url("resource://markdown_here_common/images/icon16-bw@2x.png");
+  toolbar[iconsize="small"] #toolbarButton-manoderecha_tool_markdown[disabled="true"] {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16-bw@2x.png");
   }
 }
 
@@ -99,35 +99,35 @@ toolbar[iconsize="small"] #toolbarButton-markdown_here[disabled="true"] {
 
 /* The "normal" size, which is small. */
 
-#composeToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16.png");
+#composeToolbarButton-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16.png");
 }
 
-#composeToolbarButton-markdown_here > .toolbarbutton-icon {
+#composeToolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon {
   width: 16px;
   height: 16px;
 }
 
 @media (min-resolution: 2dppx) {
-  #composeToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon16@2x.png");
+  #composeToolbarButton-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16@2x.png");
   }
 }
 
 /* The "large" size. This is available in Thunderbird+Xubuntu and Postbox. */
 
-toolbar[iconsize="large"] #composeToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon24.png");
+toolbar[iconsize="large"] #composeToolbarButton-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon24.png");
 }
 
-toolbar[iconsize="large"] #composeToolbarButton-markdown_here > .toolbarbutton-icon {
+toolbar[iconsize="large"] #composeToolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon {
   width: 24px;
   height: 24px;
 }
 
 @media (min-resolution: 2dppx) {
-  toolbar[iconsize="large"] #composeToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon24@2x.png");
+  toolbar[iconsize="large"] #composeToolbarButton-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon24@2x.png");
   }
 }
 
@@ -136,17 +136,17 @@ toolbar[iconsize="large"] #composeToolbarButton-markdown_here > .toolbarbutton-i
  * Thunderbird formatting toolbar.
  */
 
-#formatToolbarButton-markdown_here {
-  list-style-image: url("resource://markdown_here_common/images/icon16.png");
+#formatToolbarButton-manoderecha_tool_markdown {
+  list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16.png");
 }
 
-#formatToolbarButton-markdown_here > .toolbarbutton-icon {
+#formatToolbarButton-manoderecha_tool_markdown > .toolbarbutton-icon {
   width: 16px;
   height: 16px;
 }
 
 @media (min-resolution: 2dppx) {
-  #formatToolbarButton-markdown_here {
-    list-style-image: url("resource://markdown_here_common/images/icon16@2x.png");
+  #formatToolbarButton-manoderecha_tool_markdown {
+    list-style-image: url("resource://manoderecha_tool_markdown_common/images/icon16@2x.png");
   }
 }

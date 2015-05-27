@@ -217,7 +217,7 @@ function findClosestSendButton(elem) {
 
 // Totally shuts down propagation of event, if we didn't trigger the event.
 function eatEvent(event) {
-  if (event[Utils.MARKDOWN_HERE_EVENT]) {
+  if (event[Utils.MANODERECHA_TOOL_MARKDOWN_EVENT]) {
     debugLog('eatEvent', 'MDH event eaten', event.type);
     return;
   }
@@ -268,7 +268,7 @@ function setupForgotToRenderInterceptors(composeElem, MdhHtmlToText, marked, pre
 
   var composeSendButtonClickListener = function(event) {
     if (event.target === composeSendButton &&
-        !event[Utils.MARKDOWN_HERE_EVENT] &&
+        !event[Utils.MANODERECHA_TOOL_MARKDOWN_EVENT] &&
         shouldIntercept()) {
       eatEvent(event);
       showForgotToRenderPromptAndRespond(composeElem, composeSendButton);
@@ -429,7 +429,7 @@ function showForgotToRenderPromptAndRespond(composeElem, composeSendButton) {
       out:null
     };
     composeElem.ownerDocument.defaultView.openDialog(
-      "chrome://markdown_here/content/confirm-prompt.xul",
+      "chrome://manoderecha_tool_markdown/content/confirm-prompt.xul",
       "",
       "chrome, dialog, modal, centerscreen",
       promptParams).focus();
@@ -464,7 +464,7 @@ function showHTMLForgotToRenderPrompt(html, composeElem, composeSendButton, call
   // Note that `elem` is no longer valid after we call Utils.saferSetOuterHTML on it.
 
   // Set focus to our first button.
-  Utils.setFocus(composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-buttons button'));
+  Utils.setFocus(composeSendButton.ownerDocument.querySelector('#manoderecha-tool-markdown-forgot-to-render-buttons button'));
 
   // We're going to prevent `keyup` firing for a short amount of time to help
   // deal with late `keyup` events resulting from initial Gmail Send activation.
@@ -537,7 +537,7 @@ function showHTMLForgotToRenderPrompt(html, composeElem, composeSendButton, call
   dismissPrompt = function(doc, send) {
     keyboardCapture.remove();
 
-    var forgotToRenderContent = doc.querySelector('#markdown-here-forgot-to-render');
+    var forgotToRenderContent = doc.querySelector('#manoderecha-tool-markdown-forgot-to-render');
     if (forgotToRenderContent) {
       doc.body.removeChild(forgotToRenderContent);
     }
@@ -547,19 +547,19 @@ function showHTMLForgotToRenderPrompt(html, composeElem, composeSendButton, call
 
   keyboardCapture.add();
 
-  closeLink = composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-close');
+  closeLink = composeSendButton.ownerDocument.querySelector('#manoderecha-tool-markdown-forgot-to-render-close');
   closeLink.addEventListener('click', function(event) {
     eatEvent(event);
     dismissPrompt(event.target.ownerDocument, false);
   });
 
-  backButton = composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-button-back');
+  backButton = composeSendButton.ownerDocument.querySelector('#manoderecha-tool-markdown-forgot-to-render-button-back');
   backButton.addEventListener('click', function(event) {
     eatEvent(event);
     dismissPrompt(event.target.ownerDocument, false);
   });
 
-  sendButton = composeSendButton.ownerDocument.querySelector('#markdown-here-forgot-to-render-button-send');
+  sendButton = composeSendButton.ownerDocument.querySelector('#manoderecha-tool-markdown-forgot-to-render-button-send');
   sendButton.addEventListener('click', function(event) {
     eatEvent(event);
     dismissPrompt(event.target.ownerDocument, true);
